@@ -20,6 +20,11 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
   const facebook = useSelector((state) => selectContactData(state, "facebook"));
   const whatsapp = useSelector((state) => selectContactData(state, "whatsapp"));
 
+  const handleNavigate = (path) => {
+    navigate(path);
+    setDisplayHamburgerMenu(false);
+  };
+
   return (
     <div
       className={`${styles.hamburger_menu} ${
@@ -35,7 +40,14 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
         X
       </div>
       <ul className={`${styles.navbar}`}>
-        <li className={`${styles.link}`}>Über uns</li>
+        <li
+          className={`${styles.link}`}
+          onClick={() => {
+            handleNavigate("/ueber-uns");
+          }}
+        >
+          Über uns
+        </li>
         <li className={`${styles.link_with_submenu}`}>
           <p
             className={`${styles.link}`}
@@ -43,14 +55,14 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               setDropDownMenu(!dropDownMenu);
             }}
           >
-            Leistungen <AiFillCaretDown />
+            Leistungen <AiFillCaretDown className={`${styles.caret}`} />
           </p>
           {dropDownMenu ? (
             <ul className={`${styles.submenu}`}>
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  navigate("/haushaltsaufloesung");
+                  handleNavigate("/haushaltsaufloesung");
                 }}
               >
                 Haushaltsauflösung
@@ -58,7 +70,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  navigate("/entruempelung");
+                  handleNavigate("/entruempelung");
                 }}
               >
                 Entrümpelung
@@ -66,7 +78,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  navigate("/kleine-umzuege");
+                  handleNavigate("/kleine-umzuege");
                 }}
               >
                 Kleine Umzüge
@@ -74,7 +86,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  navigate("/gartenpflege");
+                  handleNavigate("/gartenpflege");
                 }}
               >
                 Gartenpflege
@@ -82,7 +94,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  navigate("/hausreinigung");
+                  handleNavigate("/hausreinigung");
                 }}
               >
                 Hausreinigung
@@ -90,7 +102,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  navigate("/glasreinigung");
+                  handleNavigate("/glasreinigung");
                 }}
               >
                 Glasreinigung

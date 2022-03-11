@@ -1,7 +1,10 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/logo/logo.png";
+
+import logo from "../../assets/logo/logo.svg";
+
 import styles from "./navbar.module.css";
+
 const Navbar = ({ setDisplayHamburgerMenu }) => {
   const navigate = useNavigate();
 

@@ -1,7 +1,7 @@
-import ClearenceServicesLinks from "../../components/clearence-services-links/clearenceServicesLinks";
-import Tag from "../../components/tag/Tag";
+import Tag from "../../../components/tag/Tag";
+import ClearenceServicesLinks from "../../../components/clearence-services-links/clearenceServicesLinks";
 import firmenaufloesungImg from "./assets/img/firmenaufloesung-bielefeld.jpg";
-import styles from "./services.module.css";
+import styles from "./../services.module.css";
 
 const OfficeClearence = () => {
   return (

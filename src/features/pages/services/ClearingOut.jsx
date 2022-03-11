@@ -1,16 +1,14 @@
 import Tag from "../../components/tag/Tag";
-import ClearenceServicesLinks from "../../components/clearence-services-links/clearenceServicesLinks";
-import sectionImg from "./assets/img/haushaltsaufloesung-bielefeld.jpg";
+import sectionImg from "./assets/img/entruempelung.jpg";
 import styles from "./services.module.css";
 
-const HomeClearence = () => {
+const ClearingOut = () => {
   return (
     <div className={`${styles.container}`}>
-      <ClearenceServicesLinks currentService='home' />
-      <h1 className={`${styles.topic_title}`}>Haushaltsauflösung</h1>
+      <h1 className={`${styles.topic_title}`}>Entrümpelung</h1>
       <img
         src={sectionImg}
-        alt='haushaltsauflösung'
+        alt='entruempelung AEA dienste Bielefeld'
         className={`${styles.topic_image}`}
       />
       <section>
@@ -119,4 +117,4 @@ const HomeClearence = () => {
   );
 };
 
-export default HomeClearence;
+export default ClearingOut;

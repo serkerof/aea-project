@@ -11,6 +11,7 @@
     font-size: var(--title-size);
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .topic_image {
@@ -30,6 +31,19 @@ section p {
     font-size: var(--title-size) !important;
     font-weight: 500 !important;
     margin-bottom: 40px;
+}
+
+section ul li:not(:first-child) {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+section ul {
+    margin: 40px 0px;
+}
+
+section ul li:first-child {
+    margin-bottom: 10px;
 }
 
 

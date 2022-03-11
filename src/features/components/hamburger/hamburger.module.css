@@ -39,6 +39,7 @@
 }
 
 .link {
+    position: relative;
     width: 100%;
     margin-top: 20px;
     font-size: var(--title-size);
@@ -74,6 +75,11 @@
     font-size: var(--text-size);
     margin: 10px 0px;
 
+}
+
+.caret {
+    position: absolute;
+    top: -5px;
 }
 
 .contact_infos {

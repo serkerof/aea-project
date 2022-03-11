@@ -1,7 +1,7 @@
-import Tag from "../../components/tag/Tag";
-import ClearenceServicesLinks from "../../components/clearence-services-links/clearenceServicesLinks";
+import Tag from "../../../components/tag/Tag";
+import ClearenceServicesLinks from "../../../components/clearence-services-links/clearenceServicesLinks";
 import sectionImg from "./assets/img/kelleraufloesung-bielefeld.jpg";
-import styles from "./services.module.css";
+import styles from "./../services.module.css";
 
 const GarageClearence = () => {
   return (

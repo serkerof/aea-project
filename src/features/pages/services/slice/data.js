@@ -1,7 +1,7 @@
-import homeSvg from "./../assets/icon/haushaltsaufloesung-bielefeld.svg";
-import garageSvg from "./../assets/icon/kelleraufloesung-bielefeld.svg";
-import officeSvg from "./../assets/icon/firmenaufloesung-bielefeld.svg";
-import apartmentSvg from "./../assets/icon/wohnungaufloesung-bielefeld.svg";
+import homeSvg from "./../clearence/assets/icon/haushaltsaufloesung-bielefeld.svg";
+import garageSvg from "./../clearence/assets/icon/kelleraufloesung-bielefeld.svg";
+import officeSvg from "./../clearence/assets/icon/firmenaufloesung-bielefeld.svg";
+import apartmentSvg from "./../clearence/assets/icon/wohnungaufloesung-bielefeld.svg";
 
 export const serviceData = {
   ids: ["home", "garage", "office", "apartment"],

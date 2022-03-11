@@ -1,8 +1,7 @@
-import React from "react";
-import styles from "./services.module.css";
+import Tag from "../../../components/tag/Tag";
+import ClearenceServicesLinks from "../../../components/clearence-services-links/clearenceServicesLinks";
 import sectionImage from "./assets/img/wohnungsaufloesung-bielefeld.jpg";
-import Tag from "../../components/tag/Tag";
-import ClearenceServicesLinks from "../../components/clearence-services-links/clearenceServicesLinks";
+import styles from "./../services.module.css";
 
 const ApartmentClearence = () => {
   return (
