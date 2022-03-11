@@ -1,8 +1,3 @@
-import { useState } from "react";
-import { BsWhatsapp } from "react-icons/bs";
-import { useSelector } from "react-redux";
-import ContactBar from "../../components/contact-bar/ContactBar";
-import ContactForm from "../../components/contact-form/ContactForm";
 import OurServiceChooser from "../../components/our-services/OurServiceChooser";
 import styles from "./home.module.css";
 import SliderService from "./../../components/slider-services/SliderService";
