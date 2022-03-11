@@ -3,59 +3,22 @@
     height: 2000px;
 }
 
-.topic_title {
-    font-size: var(--title-size);
-    color: var(--main-color);
-    text-align: center;
+.service_logo {
+    margin: 40px 0px;
+    width: 150px;
+    height: 150px;
 }
 
-.about_clearence {
+.service_desc {
+    color: var(--main-color);
+    line-height: var(--text-line-height);
+    font-size: var(--text-size);
+    padding: 0px 20px 20px;
+}
+
+.service_subtitle {
+    color: var(--main-color);
+    line-height: var(--text-line-height);
+    font-size: var(--text-size);
     padding-bottom: 50px;
-    border-bottom: 1px solid var(--light-gray-color);
-}
-
-.contact_us {
-    font-size: var(--title-size);
-    color: var(--main-color);
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.or_divider {
-    text-align: center;
-    border-bottom: 1px solid var(--light-gray-color);
-    margin: 10px 0px 30px;
-}
-
-.or_text {
-    position: relative;
-    top: 7px;
-    background-color: var(--bright-yellow);
-    padding: 0 30px;
-}
-
-.contact_box {
-    background-color: var(--bright-yellow);
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.contact_box p {
-    color: var(--main-color);
-}
-
-.contact_box h3 {
-    margin-top: 20px;
-}
-
-.contact_number {
-    display: block;
-    font-size: 25px;
-    text-align: center;
-    color: darkblue;
-}
-
-.whatsapp {
-    font-size: 22px;
-    color: darkgreen;
 }
