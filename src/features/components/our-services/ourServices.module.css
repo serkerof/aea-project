@@ -1,0 +1,118 @@
+.container {
+    padding: 50px 0px;
+    background-color: var(--main-color);
+}
+
+.title {
+    text-align: center;
+    font-size: var(--title-size);
+    line-height: var(--title-line-height);
+}
+
+.title_divider {
+    width: 150px;
+    background-color: var(--second-color);
+    height: 5px;
+    border-radius: 18px;
+    margin: 15px 0px;
+}
+
+.subtitle {
+    color: var(--second-color);
+    opacity: 0.7;
+    font-size: var(--subtitle-size);
+    line-height: var(--subtitle-line-height);
+    margin-bottom: 40px;
+}
+
+.service_group {
+    width: 100%;
+}
+
+.item_box {
+    width: 300px;
+    background-color: var(--second-color);
+    border-radius: 18px;
+    color: var(--main-color);
+    padding: 40px 10px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.item_box:hover {
+    opacity: 0.7;
+}
+
+.icon {
+    fill: var(--main-color);
+}
+
+.service_title {
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.service_desc {
+    text-align: center;
+}
+
+.find_more_btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 18px;
+    font-size: 20px;
+    background-color: var(--second-color);
+    color: var(--main-color)
+}
+
+/* DIalog */
+.dialog_container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--main-color);
+    z-index: 999;
+    padding-bottom: 50px;
+}
+
+.dialog_container .item_box {
+    margin: 20px auto;
+}
+
+.dialog_container .service_group {
+    position: absolute;
+    top: 95px;
+    margin: 0px auto;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.icon {
+    width: 50%;
+}
+
+.close_btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 10px 15px;
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+    .dialog_container .service_group {
+        width: 80%;
+    }
+
+    .dialog_container .item_box {
+        margin: 20px 50px;
+    }
+}

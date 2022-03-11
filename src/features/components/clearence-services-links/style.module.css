@@ -1,0 +1,27 @@
+.services_container {
+    margin-bottom: 50px;
+}
+
+.services_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.service_group {}
+
+.service_group .item_box {
+    background-color: var(--second-color);
+    width: 350px;
+    padding: 10px;
+    border-radius: 18px;
+    color: white;
+    margin: 10px;
+}
+
+.item_box .icon {
+    width: 50px;
+}
+
+.item_box .title {}
+
+.item_box .sub_title {}

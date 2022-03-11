@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import HomeDashboard from "./features/pages/home/HomeDashboard";
+import ApartmentClearence from "./features/pages/services/ApartmentClearence";
+import GarageClearence from "./features/pages/services/GarageClearence";
+import HomeClearence from "./features/pages/services/HomeClearence";
+import OfficeClearence from "./features/pages/services/OfficeClearence";
+import ServicesDashboard from "./features/pages/services/ServicesDashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomeDashboard />} />
+      <Route path="/haushaltsaufloesung" element={<ServicesDashboard component={<HomeClearence />} />} />
+      <Route path="/wohnungsaufloesung" element={<ServicesDashboard component={<ApartmentClearence />} />} />
+      <Route path="/firmenaufloesung" element={<ServicesDashboard component={<OfficeClearence />} />} />
+      <Route path="/kelleraufloesung" element={<ServicesDashboard component={<GarageClearence />} />} />
+    </Routes>
   );
 }
 

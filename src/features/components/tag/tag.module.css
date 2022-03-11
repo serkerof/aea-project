@@ -1,0 +1,8 @@
+
+.tag {
+    background-color: var(--second-color);
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+}

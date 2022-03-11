@@ -1,0 +1,27 @@
+.contact_bar {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.icon {
+    fill: var(--main-color);
+}
+
+.sub_title {
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.icon_container:first-child {
+    border-right: 1px solid var(--second-color);
+}
+
+.icon_container {
+    width: 50%;
+    padding: 10px;
+}

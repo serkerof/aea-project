@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #C4C4C4;
+    --second-color: #253147;
+    --third-color: #FFB422;
+    --light-gray-color: #DBDBDB;
+    --title-size: 30px;
+    --title-line-height: 35px;
+    --subtitle-size: 22px;
+    --subtitle-line-height: 27px;
+    --text-size: 17px;
+    --text-line-height: 22px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--second-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+p {
+    font-size: var(--text-size);
+
+    line-height: var(--text-line-height);
+    margin: 10px 0px;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+
+.company-name {
+    color: var(--second-color);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.title-divider {
+    height: 5px;
+    width: 100px;
+    margin: 30px 0px 15px;
+    background-color: var(--second-color);
+}
+
+@media screen and (max-width: 680px) {
+    .mobile-none {
+        display: none;
+    }
+
+    .tablet-none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    :root {
+        --title-size: 44px;
+        --text-size: 18px;
+        --text-line-height-size: 25px;
+    }
+
+    .desktop-d-flex {
+        display: flex;
+    }
+
+    .desktop-none {
+        display: none;
+    }
 }
