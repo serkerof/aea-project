@@ -3,16 +3,11 @@ import NavbarChooser from "../../components/navbar-chooser/NavbarChooser";
 import { BsInstagram } from "react-icons/bs";
 import { AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai";
 import { useSelector } from "react-redux";
-import { selectContactData } from "../../data/contactDataSlice";
+import { selectAllContactData } from "../../data/contactDataSlice";
 
 const Header = () => {
-  const email = useSelector((state) => selectContactData(state, "email"));
-  const phone = useSelector((state) => selectContactData(state, "phone"));
-  const instagram = useSelector((state) =>
-    selectContactData(state, "instagram")
-  );
-  const facebook = useSelector((state) => selectContactData(state, "facebook"));
-  const whatsapp = useSelector((state) => selectContactData(state, "whatsapp"));
+  const [email, phone, instagram, facebook, whatsapp] =
+    useSelector(selectAllContactData);
 
   return (
     <div className={`${styles.header_container} d-flex align-center`}>

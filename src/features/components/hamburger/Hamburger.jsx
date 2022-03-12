@@ -8,17 +8,13 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectContactData } from "../../data/contactDataSlice";
+import { selectAllContactData } from "../../data/contactDataSlice";
 
 const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
   const navigate = useNavigate();
   const [dropDownMenu, setDropDownMenu] = useState(false);
-  const phone = useSelector((state) => selectContactData(state, "phone"));
-  const instagram = useSelector((state) =>
-    selectContactData(state, "instagram")
-  );
-  const facebook = useSelector((state) => selectContactData(state, "facebook"));
-  const whatsapp = useSelector((state) => selectContactData(state, "whatsapp"));
+  const [, phone, instagram, facebook, whatsapp] =
+  useSelector(selectAllContactData);
 
   const handleNavigate = (path) => {
     navigate(path);
