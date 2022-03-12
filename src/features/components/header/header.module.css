@@ -7,7 +7,7 @@
 }
 
 .paragraph {
-    color: var(--second-color);
+    color: var(--main-color);
     margin-bottom: 30px;
     width: 80%;
 }
@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 }
 
-.paragraph h2 {
+.paragraph h3 {
     font-size: calc(var(--title-size) - 5px);
 }
 
