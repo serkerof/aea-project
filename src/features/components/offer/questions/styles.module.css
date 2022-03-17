@@ -166,7 +166,7 @@
 }
 
 .contact_form {
-    width: 220px;
+    width: 300px;
 }
 
 .contact_form div:last-child {
@@ -183,13 +183,13 @@
 }
 
 .contact_form input {
-    font-size: 12px;
+    font-size: 18px;
     width: 100%;
 }
 
 .contact_form input[type="text"],
 .contact_form input[type="number"] {
-    width: 100px;
+    width: 140px;
 }
 
 .data_list {
