@@ -1,45 +1,48 @@
 .container {
     bottom: 0px;
-    height: 200px;
-    border-top: 2.5px solid var(--third-color);
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     width: 100%;
+    color: var(--second-color);
+    padding: 20px;
+    padding-bottom: 150px;
 }
 
-.contact_container{
+.contact_container {
     width: 245px;
 }
 
 .contact_list,
 li a {
-    color: var(--main-color) !important
+    color: var(--second-color);
 }
 
-.contact_list li {
-    margin-bottom: 10px;
+.container li {
+    margin-bottom: 5px;
 }
 
-h5 {
-    padding-top: 10px;
-    text-align: center;
-    color: var(--main-color);
-    font-size: 18px;
+.container h5 {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: var(--second-color);
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.icon_group{
+.icon_group {
     width: 125px;
 }
 
 .icon {
-    fill: var(--main-color);
+    fill: var(--second-color);
     font-size: 20px;
 }
 
 .divider {
-    height: 3.5px;
+    margin-top: 2.5px;
+    height: 2.5px;
     background-color: var(--third-color);
-    width: 100px;
+    width: inherit;
     border-radius: 15px;
-    margin: 0px auto 10px;
-
 }

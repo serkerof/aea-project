@@ -11,7 +11,10 @@ import HouseClearing from "./features/pages/services/HouseClearing";
 import GlassClearing from "./features/pages/services/GlassClearing";
 import SmallMove from "./features/pages/services/SmallMove";
 import About from "./features/pages/about/About";
+import Questions from "./features/components/offer/questions/Questions";
 function App() {
+ 
+
   return (
     <Routes>
       <Route path='/' element={<HomeDashboard />} />

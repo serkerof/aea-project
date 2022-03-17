@@ -6,6 +6,7 @@ import Home from "./Home";
 
 const HomeDashboard = () => {
   const [status, setStatus] = useState(false);
+  const [showAd, setShowAd] = useState(false);
 
   const handleScroll = () => {
     if (document.documentElement.scrollTop >= 100) {
@@ -16,12 +17,13 @@ const HomeDashboard = () => {
   };
 
   window.addEventListener("scroll", handleScroll);
+
   return (
     <div>
       <Header />
-      <Home />
+      <Home showAd={showAd} setShowAd={setShowAd} />
       {status && <ContactBar />}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

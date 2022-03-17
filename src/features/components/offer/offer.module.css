@@ -1,0 +1,73 @@
+.offer_container {
+    position: fixed;
+    right: 0px;
+    bottom: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.button {
+    padding: 10px 15px;
+    border-radius: 100%;
+    background-color: var(--third-color);
+    color: var(--second-color);
+}
+
+.offer_message {
+    background-color: red;
+    color: var(--main-color);
+    text-align: center;
+    border-radius: 18px;
+    margin-right: 10px;
+}
+
+.dialog_container {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+.close_btn {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 10px 15px;
+    font-size: 22.5px;
+    border-radius: 100%;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.offering_button_group {
+    height: 50%;
+    padding: 50px;
+}
+
+.offering_button_group .item {
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.return_btn {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 10px 10px;
+    font-size: 24px;
+    border-radius: 100%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.offering_button_group .title {
+    text-align: center;
+    font-size: var(--title-size);
+    line-height: var(--title-line-height);
+}
