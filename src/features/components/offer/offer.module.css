@@ -5,32 +5,6 @@
     bottom: 80px;
     padding-left: 20px;
     padding-right: 10px;
-
-}
-
-.button::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    right: -5px;
-    border: 1px solid orange;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    border-radius: 50%;
-    animation: pulse 4s linear infinite
-}
-
-.button::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    right: -5px;
-    border: 1px solid ORANGE;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    border-radius: 50%;
-    animation: pulse 1s linear infinite;
-    animation-delay: 0.3s
 }
 
 @keyframes pulse {
@@ -58,6 +32,31 @@
     position: relative
 }
 
+.button::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border: 1px solid orange;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 50%;
+    animation: pulse 4s linear infinite
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border: 1px solid ORANGE;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 50%;
+    animation: pulse 1s linear infinite;
+    animation-delay: 0.3s
+}
+
 .offer_message {
     background-color: red;
     color: var(--main-color);
@@ -66,6 +65,7 @@
     margin-right: 10px;
 }
 
+/* !---------------------------------------------------------------------------------- */
 .dialog_container {
     position: fixed;
     top: 0px;
@@ -87,17 +87,7 @@
 }
 
 .offering_button_group {
-    height: 50%;
     padding: 50px;
-}
-
-.offering_button_group .item {
-    margin: 20px 0px;
-    padding: 20px;
-    border-radius: 18px;
-    font-size: 20px;
-    background-color: var(--second-color);
-    color: var(--main-color);
 }
 
 .return_btn {
@@ -115,4 +105,61 @@
     text-align: center;
     font-size: var(--title-size);
     line-height: var(--title-line-height);
+}
+
+.divider {
+    height: 2.5px;
+    margin: 5px 0px;
+    background-color: gray;
+    width: 100%;
+}
+
+.offering_button_group .sub_title {
+    font-size: 14px;
+    text-align: center;
+}
+
+.item_box {
+    border-radius: 18px;
+    padding: 40px 10px 20px 10px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.topic_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.desc {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.get_offer_btn,
+.contact_btn {
+    border-radius: 18px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+.get_offer_btn{
+    background-color: var(--second-color);
+}
+
+.offering {
+    box-shadow: 0px -1px 5px 2px var(--second-color);
+}
+
+.contact_form {
+    box-shadow: 0px -1px 5px 2px rgb(37, 185, 44);
+}
+
+.contact_btn {
+    background-color: rgb(37, 185, 44);
+}
+
+.hint {
+    /* color: ; */
+    font-size: 14px;
 }

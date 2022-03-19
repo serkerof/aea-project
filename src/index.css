@@ -98,7 +98,9 @@ input {
 .full-height {
     height: 100%;
 }
-
+.display-none{
+    display: none;
+}
 .company-name {
     color: var(--second-color);
     font-weight: 600;

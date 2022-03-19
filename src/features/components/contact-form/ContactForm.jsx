@@ -9,7 +9,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 
-const ContactForm = () => {
+const ContactForm = ({ visibilityClass }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
 
@@ -28,8 +28,8 @@ const ContactForm = () => {
 
   return (
     <div className={`${styles.container} d-flex justify-center align-center`}>
-      <div className={`${styles.context_container} d-flex flex-wrap`}>
-        <div className={`${styles.contact_us}`}>
+      <div className={`${styles.context_container} d-flex flex-wrap `}>
+        <div className={`${styles.contact_us} ${visibilityClass}`}>
           <div>
             <h3 className={`${styles.title}`}>Kontaktieren Sie uns!</h3>
             <p className={`${styles.desc}`}>

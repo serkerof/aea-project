@@ -3,6 +3,7 @@ import styles from "./offer.module.css";
 import { IoMdReturnLeft } from "react-icons/io";
 import { GrFormNextLink } from "react-icons/gr";
 import Questions from "./questions/Questions";
+import ContactForm from "../contact-form/ContactForm";
 
 const OfferDialog = ({ setStatus }) => {
   const [selectedComponent, setSelectedComponent] = useState();
@@ -33,25 +34,49 @@ const OfferDialog = ({ setStatus }) => {
         <div
           className={`${styles.offering_button_group} d-flex direction-column justify-center`}
         >
-          <h2 className={`${styles.title}`}>
+          <h2 className={`${styles.title}`}>Kontaktiere Uns</h2>
+          <div className={styles.divider}></div>
+          <h3 className={`${styles.sub_title}`}>
             Um schnelle Erledigung Ihre wünsche kontaktieren Sie bitte uns!
-          </h2>
-          <button
-            className={`${styles.item}`}
-            onClick={() => {
-              setSelectedComponent(<Questions />);
-            }}
-          >
-            Angebot Erhalten
-          </button>
-          <button
-            className={`${styles.item}`}
-            onClick={() => {
-              setSelectedComponent(contact);
-            }}
-          >
-            Kontaktieren
-          </button>
+          </h3>
+          <div className={`${styles.item_box} ${styles.offering}`}>
+            <h4 className={`${styles.topic_title}`}>Befragung</h4>
+            <p className={`${styles.desc}`}>
+              Tragen Sie gefragte fragen damit wir uns schnell um Ihre Anliegen
+              kümmern können!
+            </p>
+            <button
+              className={`${styles.get_offer_btn}`}
+              onClick={() => {
+                setSelectedComponent(<Questions />);
+              }}
+            >
+              Angebot Erhalten
+            </button>
+            <p className={`${styles.hint}`}>
+              Dauer: <strong> 2 Minuten!</strong>
+            </p>
+          </div>
+          <div className={`${styles.item_box} ${styles.contact_form}`}>
+            <h4 className={`${styles.topic_title}`}>Kontakt Form</h4>
+            <p className={`${styles.desc}`}>
+              Wenn Sie Fragen haben können Sie sehr schnell über unsere Kontakt
+              Form uns einreichen!
+            </p>
+            <button
+              className={`${styles.contact_btn}`}
+              onClick={() => {
+                setSelectedComponent(
+                  <ContactForm visibilityClass={"display-none"} />
+                );
+              }}
+            >
+              Kontaktieren
+            </button>
+            <p className={`${styles.hint}`}>
+              Dauer: <strong> 2 Minuten!</strong>
+            </p>
+          </div>
         </div>
       )}
     </div>
