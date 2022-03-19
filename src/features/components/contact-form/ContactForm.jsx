@@ -1,4 +1,4 @@
-import styles from "./contact-form.module.css";
+import styles from "./styles.module.css"
 import emailjs from "@emailjs/browser";
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";

@@ -4,15 +4,19 @@ import { BiMessageDetail } from "react-icons/bi";
 import { useSelector } from "react-redux";
 import { selectContactData } from "../../data/contactDataSlice";
 import { useState } from "react";
+import ContactFormDialog from "../contact-form/ContactFormDialog";
 
 const ContactBar = ({ contactFormRef }) => {
   const phone = useSelector((state) => selectContactData(state, "phone"));
-  const [dialog, setDialog] = useState(null);
-  return (
+  const [status, setStatus] = useState(false);
+
+  return status ? (
+    <ContactFormDialog setStatus={setStatus} />
+  ) : (
     <div
       className={`${styles.contact_bar} slide-from-bottom desktop-none d-flex`}
     >
-      {dialog}
+      {status}
       <a
         href={`tel:${phone.number}`}
         className={`${styles.icon_container} d-flex justify-center`}
@@ -23,7 +27,9 @@ const ContactBar = ({ contactFormRef }) => {
       <div
         className={`${styles.icon_container} d-flex justify-center`}
         onClick={() =>
-          contactFormRef ? contactFormRef.current.scrollIntoView({behavior: 'smooth'}) : setDialog()
+          contactFormRef
+            ? contactFormRef.current.scrollIntoView({ behavior: "smooth" })
+            : setStatus(true)
         }
       >
         <BiMessageDetail className={`${styles.icon}`} size={26} />
