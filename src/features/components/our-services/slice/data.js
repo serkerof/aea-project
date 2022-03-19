@@ -21,7 +21,7 @@ export const servicesData = {
       description: "wir bieten Ihnen best möglichem service!",
       icon: houseClearanceSvg,
       imageAlt: "Haushaltsauflösung AEA Dienste Bielefeld",
-      link: "/Haushaltsauflösung",
+      link: "/haushaltsaufloesung",
     },
     clearingOut: {
       id: "clearingOut",

@@ -23,7 +23,11 @@ const OurServices = ({ setDialogStatus }) => {
       />
       <h3 className={`${styles.service_title}`}>{service.title}</h3>
       <h5 className={`${styles.service_desc}`}>{service.description}</h5>
-      <img src={forwardsSvg}  className={`${styles.link_icon}`} alt={`entdecke mehr über ${service.title}`} />
+      <img
+        src={forwardsSvg}
+        className={`${styles.link_icon}`}
+        alt={`entdecke mehr über ${service.title}`}
+      />
     </div>
   ));
   const responsive = {
