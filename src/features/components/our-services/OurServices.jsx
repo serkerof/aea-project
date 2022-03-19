@@ -3,7 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import { useSelector } from "react-redux";
 import { selectAllServices } from "./slice/servicesSlice";
 import { useNavigate } from "react-router-dom";
-
+import forwardsSvg from "./assets/icon/forwards.svg";
 const OurServices = ({ setDialogStatus }) => {
   const navigate = useNavigate();
   const allServicesData = useSelector(selectAllServices);
@@ -23,6 +23,7 @@ const OurServices = ({ setDialogStatus }) => {
       />
       <h3 className={`${styles.service_title}`}>{service.title}</h3>
       <h5 className={`${styles.service_desc}`}>{service.description}</h5>
+      <img src={forwardsSvg}  className={`${styles.link_icon}`} alt={`entdecke mehr über ${service.title}`} />
     </div>
   ));
   const responsive = {
