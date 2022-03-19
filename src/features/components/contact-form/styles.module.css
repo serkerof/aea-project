@@ -15,9 +15,8 @@
     height: 450px;
 }
 
-
-
 .title {
+    color: black;
     font-size: var(--title-size);
     font-weight: 600;
     letter-spacing: 1px;
@@ -45,6 +44,31 @@
 .social_media_group {
     margin-top: 30px;
     width: 100px;
+}
+
+.header {
+    border-radius: 15px 15px 0px 0px;
+    background-color: #4d5dfb;
+    background-image: linear-gradient(-90deg, #4d5dfb 0%, #08c8f6 95%);
+    text-align: center;
+    padding: 10px;
+}
+
+
+.dialog_media_group {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.dialog_icon {
+    fill: white;
+}
+
+.dialog_title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 .contact_form {
@@ -102,6 +126,14 @@
     height: 100%;
     z-index: 999;
     background-color: white;
+}
+
+.form_container {
+    width: 100%;
+}
+
+.form_container>div:last-child {
+    padding-left: 40px;
 }
 
 .close_btn {

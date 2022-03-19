@@ -3,6 +3,7 @@ import styles from "./offer.module.css";
 import { IoMdReturnLeft } from "react-icons/io";
 import Questions from "./questions/Questions";
 import ContactForm from "../contact-form/ContactForm";
+import ContactFormDialog from "../contact-form/ContactFormDialog";
 
 const OfferDialog = ({ setStatus }) => {
   const [selectedComponent, setSelectedComponent] = useState();
@@ -64,7 +65,7 @@ const OfferDialog = ({ setStatus }) => {
               className={`${styles.contact_btn}`}
               onClick={() => {
                 setSelectedComponent(
-                  <ContactForm visibilityClass={"display-none"} />
+                  <ContactFormDialog setStatus={setStatus} />
                 );
               }}
             >
