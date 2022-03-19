@@ -5,7 +5,7 @@ import { AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";
 
-const Header = () => {
+const Header = ({ contactFormRef }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
 
@@ -41,8 +41,11 @@ const Header = () => {
           </div>
           <button
             className={`${styles.link_button} d-flex align-center justify-center`}
+            onClick={() =>
+              contactFormRef.current.scrollIntoView({ behavior: "smooth" })
+            }
           >
-            To contact form
+            Zum Kontakt Form
           </button>
         </div>
       </div>

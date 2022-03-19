@@ -9,7 +9,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 
-const ContactForm = ({ visibilityClass }) => {
+const ContactForm = ({ contactFormRef, visibilityClass }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
 
@@ -27,7 +27,10 @@ const ContactForm = ({ visibilityClass }) => {
   };
 
   return (
-    <div className={`${styles.container} d-flex justify-center align-center`}>
+    <div
+      className={`${styles.container} d-flex justify-center align-center `}
+      ref={contactFormRef}
+    >
       <div className={`${styles.context_container} d-flex flex-wrap `}>
         <div className={`${styles.contact_us} ${visibilityClass}`}>
           <div>
@@ -44,11 +47,11 @@ const ContactForm = ({ visibilityClass }) => {
               href={`emailto: ${email.address}`}
               className='d-flex align-center'
             >
-              <AiOutlineMail size={25} className={`${styles.icon}`} />
+              <AiOutlineMail size={20} className={`${styles.icon}`} />
               &nbsp; {email.address}
             </a>
             <a href={`tel:${phone.number} `} className='d-flex align-center'>
-              <BsTelephone size={25} className={`${styles.icon}`} />
+              <BsTelephone size={20} className={`${styles.icon}`} />
               &nbsp; {phone.number}
             </a>
           </div>
@@ -56,13 +59,13 @@ const ContactForm = ({ visibilityClass }) => {
             className={`${styles.social_media_group} d-flex justify-between`}
           >
             <a href={facebook.link} className={`${styles.link}`}>
-              <BsInstagram size={30} className={`${styles.icon}`} />
+              <BsInstagram size={20} className={`${styles.icon}`} />
             </a>
             <a href={instagram.link} className={`${styles.link}`}>
-              <AiFillFacebook size={30} className={`${styles.icon}`} />
+              <AiFillFacebook size={20} className={`${styles.icon}`} />
             </a>
             <a href={whatsapp.link} className={`${styles.link}`}>
-              <AiOutlineWhatsApp size={30} className={`${styles.icon}`} />
+              <AiOutlineWhatsApp size={20} className={`${styles.icon}`} />
             </a>
           </div>
         </div>

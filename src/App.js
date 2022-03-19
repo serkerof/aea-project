@@ -12,6 +12,7 @@ import GlassClearing from "./features/pages/services/GlassClearing";
 import SmallMove from "./features/pages/services/SmallMove";
 import About from "./features/pages/about/About";
 import Questions from "./features/components/offer/questions/Questions";
+import Contact from "./features/pages/contact/Contact";
 function App() {
  
 
@@ -60,6 +61,10 @@ function App() {
       <Route
         path='/ueber-uns'
         element={<ServicesDashboard component={<About />} />}
+      />
+        <Route
+        path='/kontakt'
+        element={<ServicesDashboard component={<Contact />} />}
       />
     </Routes>
   );

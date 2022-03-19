@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ContactBar from "../../components/contact-bar/ContactBar";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
@@ -7,6 +7,7 @@ import Home from "./Home";
 
 const HomeDashboard = () => {
   const [status, setStatus] = useState(false);
+  const contactFormRef = useRef();
 
   const handleScroll = () => {
     if (document.documentElement.scrollTop >= 100) {
@@ -34,9 +35,9 @@ const HomeDashboard = () => {
 
   return (
     <div className='animation'>
-      <Header />
-      <Home />
-      {status && <ContactBar />}
+      <Header contactFormRef={contactFormRef}/>
+      <Home contactFormRef={contactFormRef}/>
+      {status && <ContactBar contactFormRef={contactFormRef}/>}
       {status && <OfferChooser />}
       <Footer />
     </div>

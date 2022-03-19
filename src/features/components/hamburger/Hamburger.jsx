@@ -108,7 +108,9 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
             ""
           )}
         </li>
-        <li className={`${styles.link}`}>Kontakt</li>
+        <li className={`${styles.link}`}  onClick={() => {
+                  handleNavigate("/kontakt");
+                }}>Kontakt</li>
       </ul>
       <div
         className={`${styles.contact_infos} d-flex justify-between align-center`}

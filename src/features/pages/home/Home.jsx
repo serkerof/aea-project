@@ -6,7 +6,7 @@ import serviceLogo from "./assets/img/service.svg";
 import Profit from "../../components/profits/Profit";
 import ContactForm from "../../components/contact-form/ContactForm";
 
-const Home = () => {
+const Home = ({ contactFormRef }) => {
   return (
     <div className={`${styles.container}`}>
       <OurServiceChooser />
@@ -81,7 +81,7 @@ const Home = () => {
                 <h2>Ablauf der Haushaltslösung Prozess!</h2>
             </section>
  */}
-      <ContactForm />
+      <ContactForm contactFormRef={contactFormRef} />
     </div>
   );
 };

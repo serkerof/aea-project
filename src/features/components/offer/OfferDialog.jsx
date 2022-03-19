@@ -1,14 +1,11 @@
 import { useState } from "react";
 import styles from "./offer.module.css";
 import { IoMdReturnLeft } from "react-icons/io";
-import { GrFormNextLink } from "react-icons/gr";
 import Questions from "./questions/Questions";
 import ContactForm from "../contact-form/ContactForm";
 
 const OfferDialog = ({ setStatus }) => {
   const [selectedComponent, setSelectedComponent] = useState();
-
-  const contact = <div>Contact</div>;
 
   const returnButton = selectedComponent && (
     <button
