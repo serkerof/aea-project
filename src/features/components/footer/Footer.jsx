@@ -4,7 +4,6 @@ import { BsInstagram } from "react-icons/bs";
 import {
   AiFillFacebook,
   AiOutlineWhatsApp,
-  AiFillCaretDown,
 } from "react-icons/ai";
 import styles from "./footer.module.css";
 

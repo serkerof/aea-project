@@ -2,7 +2,7 @@ import styles from "./offer.module.css";
 import { FiUser } from "react-icons/fi";
 const Offer = ({ setStatus }) => {
   return (
-    <div className={`${styles.offer_container} d-flex`}>
+    <div className={`${styles.offer_container} d-flex slide-from-right`}>
       <p className={`${styles.offer_message}`}>
         Wollen Sie von uns ein angebot bekommen?
       </p>

@@ -6,9 +6,11 @@ import { selectContactData } from "../../data/contactDataSlice";
 
 const ContactBar = () => {
   const phone = useSelector((state) => selectContactData(state, "phone"));
-  
+
   return (
-    <div className={`${styles.contact_bar} desktop-none d-flex`}>
+    <div
+      className={`${styles.contact_bar} slide-from-bottom desktop-none d-flex`}
+    >
       <a
         href={`tel:${phone.number}`}
         className={`${styles.icon_container} d-flex justify-center`}

@@ -111,6 +111,7 @@ input {
     margin: 30px 0px 15px;
     background-color: var(--second-color);
 }
+
 /* .react-datepicker__input-container{
     text-align: center;
 } */
@@ -137,5 +138,35 @@ input {
 
     .desktop-none {
         display: none;
+    }
+}
+
+.slide-from-right {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+}
+
+.slide-from-bottom {
+    animation-name: slideFromBottom;
+    animation-duration: 1s;
+}
+
+@keyframes slideFromRight {
+    0% {
+        right: -200px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes slideFromBottom {
+    0% {
+        bottom: -200px;
+    }
+
+    100% {
+        bottom: 0px;
     }
 }

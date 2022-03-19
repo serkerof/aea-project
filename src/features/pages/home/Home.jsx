@@ -3,15 +3,12 @@ import styles from "./home.module.css";
 import SliderService from "./../../components/slider-services/SliderService";
 import Liquidation from "../../components/liquidation/Liquidation";
 import serviceLogo from "./assets/img/service.svg";
-import OfferChooser from "../../components/offer/OfferChooser";
-import { useState } from "react";
-import OfferDialog from "../../components/offer/OfferDialog";
 import Profit from "../../components/profits/Profit";
+import ContactForm from "../../components/contact-form/ContactForm";
 
-const Home = ({ showAd, setShowAd }) => {
+const Home = () => {
   return (
     <div className={`${styles.container}`}>
-      {showAd && <OfferDialog setStatus={setShowAd} />}
       <OurServiceChooser />
       <div className='d-flex direction-column align-center justify-center'>
         <img className={`${styles.service_logo}`} src={serviceLogo} alt='' />
@@ -35,7 +32,7 @@ const Home = ({ showAd, setShowAd }) => {
         <strong className={`${styles.service_subtitle}`}>Ihre AEA Team</strong>
       </div>
       <Profit />
-      <OfferChooser />
+      {/* <OfferChooser /> */}
       {/* <SliderService /> */}
 
       {/* <section>
@@ -84,6 +81,7 @@ const Home = ({ showAd, setShowAd }) => {
                 <h2>Ablauf der Haushaltslösung Prozess!</h2>
             </section>
  */}
+      <ContactForm />
     </div>
   );
 };

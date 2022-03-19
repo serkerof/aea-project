@@ -204,7 +204,7 @@
     border-bottom: 1px solid var(--light-gray-color);
 }
 
-span {
+.data_list span {
     display: inline-block;
 }
 

@@ -11,7 +11,7 @@ const OfferDialog = ({ setStatus }) => {
 
   const returnButton = selectedComponent && (
     <button
-      className={`${styles.return_btn} d-flex align-center`}
+      className={`${styles.return_btn} d-flex align-center `}
       onClick={() => setSelectedComponent(null)}
     >
       <IoMdReturnLeft size={25} />
@@ -20,7 +20,7 @@ const OfferDialog = ({ setStatus }) => {
 
   return (
     <div
-      className={`${styles.dialog_container} d-flex align-center justify-center`}
+      className={`${styles.dialog_container} d-flex align-center justify-center `}
     >
       <button
         className={`${styles.close_btn}`}

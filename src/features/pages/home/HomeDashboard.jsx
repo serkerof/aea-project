@@ -2,11 +2,11 @@ import { useState } from "react";
 import ContactBar from "../../components/contact-bar/ContactBar";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import OfferChooser from "../../components/offer/OfferChooser";
 import Home from "./Home";
 
 const HomeDashboard = () => {
   const [status, setStatus] = useState(false);
-  const [showAd, setShowAd] = useState(false);
 
   const handleScroll = () => {
     if (document.documentElement.scrollTop >= 100) {
@@ -16,13 +16,28 @@ const HomeDashboard = () => {
     }
   };
 
+  // const [status, setStatus] = useState({ contactBar: false, offer: false });
+
+  // const handleScroll = () => {
+  //   if (document.documentElement.scrollTop >= 100) {
+  //     setStatus({ contactBar: true, offer: false });
+  //   } else if (document.documentElement.scrollTop >= 500) {
+  //     setStatus({ contactBar: true, offer: true });
+  //   } else {
+  //     status.offer === true
+  //       ? setStatus({ contactBar: false, offer: true })
+  //       : setStatus({ contactBar: false, offer: false });
+  //   }
+  // };
+
   window.addEventListener("scroll", handleScroll);
 
   return (
-    <div>
+    <div className='animation'>
       <Header />
-      <Home showAd={showAd} setShowAd={setShowAd} />
+      <Home />
       {status && <ContactBar />}
+      {status && <OfferChooser />}
       <Footer />
     </div>
   );
