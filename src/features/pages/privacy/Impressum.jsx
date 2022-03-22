@@ -1,15 +1,15 @@
 import Footer from "../../components/footer/Footer";
 import NavbarChooser from "../../components/navbar-chooser/NavbarChooser";
-import styles from "./about.module.css";
+import styles from "./styles.module.css";
 
-const About = () => {
+const Impressum = () => {
   return (
-    <div>
+     <div>
       <NavbarChooser />
-      <div className={`${styles.container}`}>Über uns</div>
+      <div className={`${styles.container}`}>Impressum</div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default Impressum

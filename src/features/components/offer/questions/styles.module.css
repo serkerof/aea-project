@@ -35,6 +35,81 @@
     border: 1px solid var(--second-color);
 }
 
+
+@media screen and (min-width: 1024px) {
+    .container {
+        overflow-y: auto !important;
+    }
+
+    .step_round {
+        top: -15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .step_title {
+        top: -15px !important;
+        left: -6.5px !important;
+        font-size: 12px !important;
+    }
+
+    .done:nth-child(even):after {
+        top: -10px !important;
+        font-size: 16px !important;
+        right: -9px !important;
+    }
+
+    .line {
+        height: 2px;
+        width: 50px;
+    }
+
+    .option_box {
+        width: 350px !important;
+    }
+
+    .option_image {
+        height: 220px;
+    }
+
+    .button_group {
+        width: 100%;
+    }
+
+    .floor_btn {
+        width: 70px !important;
+        height: 30px !important;
+        font-size: 18px;
+    }
+
+    .floor_input_label {
+        font-size: 16px !important;
+    }
+
+    .floor_input::placeholder {
+        font-size: 16px;
+    }
+
+    .floor_input {
+        font-size: 16px;
+    }
+
+    .parking label{
+        font-size: 18px;
+    }
+    .data_list *{
+        font-size: 18px;
+    }
+
+    .contact_data .title{
+        font-size: 20px!important;
+    }
+
+    .topic{
+        width: 175px!important;
+    }
+}
+
 .step_title {
     position: relative;
     top: -12px;

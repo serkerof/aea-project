@@ -1,9 +1,9 @@
 .header_container {
-    height: 100vh;
     background-image: url("./assets/img/haushaltaufloesung.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 80vh;
 }
 
 .paragraph {
@@ -23,7 +23,7 @@
 
 .context_container {
     width: 90%;
-    margin: 100px auto 0px;
+    margin: 150px auto 0px;
 }
 
 .contact_form {

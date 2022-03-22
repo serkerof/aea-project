@@ -25,56 +25,58 @@ const Floor = ({ currentValue, setCurrentAnswer }) => {
 
   return (
     <div className='d-flex flex-wrap justify-around'>
-      <button
-        className={`${styles.floor_btn} ${
-          selectedFloor === floors.keller && styles.selected
-        }`}
-        onClick={() => {
-          setSelectedFloor(floors.keller);
-        }}
-      >
-        {floors.keller}
-      </button>
-      <button
-        className={`${styles.floor_btn} ${
-          selectedFloor === floors.eg && styles.selected
-        }`}
-        onClick={() => {
-          setSelectedFloor(floors.eg);
-        }}
-      >
-        {floors.eg}
-      </button>
-      <button
-        className={`${styles.floor_btn} ${
-          selectedFloor === floors.firstFloor && styles.selected
-        }`}
-        onClick={() => {
-          setSelectedFloor(floors.firstFloor);
-        }}
-      >
-        {floors.firstFloor}
-      </button>
-      <button
-        className={`${styles.floor_btn} ${
-          selectedFloor === floors.secondFloor && styles.selected
-        }`}
-        onClick={() => {
-          setSelectedFloor(floors.secondFloor);
-        }}
-      >
-        {floors.secondFloor}
-      </button>
-      <button
-        className={`${styles.floor_btn} ${
-          selectedFloor === floors.thirdFloor && styles.selected
-        }`}
-        onClick={() => {
-          setSelectedFloor(floors.thirdFloor);
-        }}
-      >
-        {floors.thirdFloor}
-      </button>
+      <div className={`${styles.button_group} d-flex justify-around`}>
+        <button
+          className={`${styles.floor_btn} ${
+            selectedFloor === floors.keller && styles.selected
+          }`}
+          onClick={() => {
+            setSelectedFloor(floors.keller);
+          }}
+        >
+          {floors.keller}
+        </button>
+        <button
+          className={`${styles.floor_btn} ${
+            selectedFloor === floors.eg && styles.selected
+          }`}
+          onClick={() => {
+            setSelectedFloor(floors.eg);
+          }}
+        >
+          {floors.eg}
+        </button>
+        <button
+          className={`${styles.floor_btn} ${
+            selectedFloor === floors.firstFloor && styles.selected
+          }`}
+          onClick={() => {
+            setSelectedFloor(floors.firstFloor);
+          }}
+        >
+          {floors.firstFloor}
+        </button>
+        <button
+          className={`${styles.floor_btn} ${
+            selectedFloor === floors.secondFloor && styles.selected
+          }`}
+          onClick={() => {
+            setSelectedFloor(floors.secondFloor);
+          }}
+        >
+          {floors.secondFloor}
+        </button>
+        <button
+          className={`${styles.floor_btn} ${
+            selectedFloor === floors.thirdFloor && styles.selected
+          }`}
+          onClick={() => {
+            setSelectedFloor(floors.thirdFloor);
+          }}
+        >
+          {floors.thirdFloor}
+        </button>
+      </div>
       <label className={`${styles.floor_input_label}`}>
         Wenn Sie nicht gefunden haben, tippen Sie hier ein
       </label>

@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 import Option from "./Option";
 import Calendar from "./Calendar";
 import ContactForm from "./ContactForm";
-
+import emailjs from "@emailjs/browser";
 const Questions = () => {
   const allQuestions = useSelector(selectAllQuestions);
   let [currentQuestion, setCurrentQuestion] = useState(0);
@@ -23,6 +23,34 @@ const Questions = () => {
   useEffect(() => {
     data.length === currentQuestion + 1 && handlePreviousQuestion();
   }, [question]);
+
+  const sendEmail = () => {
+    const template_object = {
+      service: data[0].answer.title,
+      placementType:  data[1].answer.title,
+      placementSize:  data[2].answer,
+      floor: data[3].answer,
+      parking:  data[4].answer,
+      wishedAppointment:  data[5].answer,
+      city:  data[6].answer.city.value,
+      email: data[6].answer.email.value,
+      forename:  data[6].answer.forename.value,
+      surname:  data[6].answer.surname.value,
+      street: data[6].answer.street.value,
+      postIndex:  data[6].answer.postIndex.value,
+      phoneNumber:  data[6].answer.phoneNumber.value,
+      homeNumber:  data[6].answer.homeNumber.value,
+    };
+    emailjs
+      .send(
+        "service_rk9la5q",
+        "template_0cc1k8m",
+        template_object,
+        "i_Sr8vndWQHxXL_e6"
+      )
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
 
   const handleNextQuestion = () => {
     if (currentAnswer && Object.keys(currentAnswer).length > 0) {
@@ -46,7 +74,6 @@ const Questions = () => {
       if (obj.id === question.id) {
         setCurrentAnswer(obj.answer);
         setData(data.filter((p) => p.id !== obj.id));
-        console.log(data);
         setIsPreviousQuestion(true);
       }
     });
@@ -239,7 +266,14 @@ const Questions = () => {
                 );
               })}
           </ul>
-          <button className={`${styles.send_btn}`}>Abschicken</button>
+          <button
+            className={`${styles.send_btn}`}
+            onClick={() => {
+              sendEmail();
+            }}
+          >
+            Abschicken
+          </button>
         </div>
       )}
     </div>

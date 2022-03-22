@@ -103,6 +103,14 @@ input {
     display: none;
 }
 
+.d-grid {
+    display: grid;
+}
+
+.two-column {
+    grid-template-columns: 1fr 1fr;
+}
+
 .container {
     padding-top: 100px;
 }
@@ -123,25 +131,24 @@ input {
 /* .react-datepicker__input-container{
     text-align: center;
 } */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
     .mobile-none {
         display: none;
     }
+}
 
+@media (min-width: 767px) and (max-width: 1024px) {
     .tablet-none {
         display: none;
     }
 }
 
-@media screen and (min-width: 680px) {
+
+@media screen and (min-width: 1024px) {
     :root {
-        --title-size: 44px;
+        --title-size: 35px;
         --text-size: 18px;
         --text-line-height-size: 25px;
-    }
-
-    .desktop-d-flex {
-        display: flex;
     }
 
     .desktop-none {

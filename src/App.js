@@ -11,11 +11,12 @@ import HouseClearing from "./features/pages/services/HouseClearing";
 import GlassClearing from "./features/pages/services/GlassClearing";
 import SmallMove from "./features/pages/services/SmallMove";
 import About from "./features/pages/about/About";
-import Questions from "./features/components/offer/questions/Questions";
 import Contact from "./features/pages/contact/Contact";
-function App() {
- 
+import DrainCleaning from "./features/pages/services/DrainCleaning";
+import Impressum from "./features/pages/privacy/Impressum";
+import Datenschutz from "./features/pages/privacy/Datenschutz";
 
+function App() {
   return (
     <Routes>
       <Route path='/' element={<HomeDashboard />} />
@@ -59,13 +60,13 @@ function App() {
         element={<ServicesDashboard component={<SmallMove />} />}
       />
       <Route
-        path='/ueber-uns'
-        element={<ServicesDashboard component={<About />} />}
+        path='/abflussreinigung'
+        element={<ServicesDashboard component={<DrainCleaning />} />}
       />
-        <Route
-        path='/kontakt'
-        element={<ServicesDashboard component={<Contact />} />}
-      />
+      <Route path='/ueber-uns' element={<About />} />
+      <Route path='/kontakt' element={<Contact />} />
+      <Route path='/impressum' element={<Impressum />} />
+      <Route path='/datenschutz' element={<Datenschutz />} />
     </Routes>
   );
 }

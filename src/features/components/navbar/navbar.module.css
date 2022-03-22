@@ -2,7 +2,7 @@
     position: fixed;
     top: 0px;
     width: 90%;
-    margin: 5% 5%;
+    margin: 30px 5%;
     border-radius: 15px;
     box-shadow: 0px 0px 5px 1px var(--second-color);
     color: var(--second-color);
@@ -19,24 +19,18 @@
     margin-right: 40px;
     color: var(--second-color);
     font-weight: 700;
+    position: relative;
 }
 
-@media screen and (min-width: 880px) {
-    .nav_bottom {
-        margin: 2.5% 5%;
-    }
-
-    .nav_bottom {
-        padding: 0px 40px 0px 50px;
-    }
-
-    .logo {
-        width: 180px;
-    }
+.navlink>.item:hover {
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .logo {
     width: 120px;
+    cursor: pointer;
 }
 
 .hamburger_icon_container {
@@ -53,23 +47,54 @@
     fill: var(--dark-gold);
 }
 
-
-/* 
-.contact_infos {
-    width: 100%;
-    padding: 20px 20px 10px;
-    color: var(--second-color);
+.submenu {
+    display: block;
+    top: 10px;
 }
 
-.contact_number {
-    margin-bottom: 10px;
-    color: var(--dark-gold);
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    .navlink>.item {
+        padding: 20px;
+    }
+
+    .submenu {
+        text-transform: capitalize;
+        font-weight: 400;
+        position: absolute;
+        top: 60px;
+        left: -10px;
+        border-radius: 0px 0px 10px 10px;
+        color: var(--second-color);
+        padding: 10px 20px;
+        background-color: var(--main-color);
+        animation: growDown 500ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    .sub_link {
+        margin-bottom: 10px;
+    }
+
+    .sub_link :hover {
+        background-color: lightgray !important;
+        text-transform: uppercase;
+    }
+
+    @keyframes growDown {
+        0% {
+            transform: scaleY(0)
+        }
+
+        80% {
+            transform: scaleY(1.1)
+        }
+
+        100% {
+            transform: scaleY(1)
+        }
+    }
+
 }
-
-.social_media_group {
-    width: 50px;
-} */
-
-/* .social_media_group .item>a {
-
-} */

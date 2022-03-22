@@ -1,4 +1,4 @@
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 import emailjs from "@emailjs/browser";
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";
@@ -8,12 +8,31 @@ import {
   AiOutlineWhatsApp,
   AiOutlineMail,
 } from "react-icons/ai";
+import { useEffect, useState } from "react";
+import ConfirmationDialog from "../confirmation-dialog/ConfirmationDialog";
 
 const ContactForm = ({ contactFormRef, visibilityClass }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  const updateDimensions = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    screenWidth > 1024 ? setIsDesktop(true) : setIsDesktop(false);
+  }, [screenWidth]);
+
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", updateDimensions);
+  }, []);
 
   const handleSubmit = (e) => {
+    setIsFormSubmitted(true)
     emailjs
       .sendForm(
         "service_ebbwn4f",
@@ -31,7 +50,11 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
       className={`${styles.container} d-flex justify-center align-center `}
       ref={contactFormRef}
     >
-      <div className={`${styles.context_container} d-flex flex-wrap `}>
+      <div
+        className={`${styles.context_container} ${
+          isDesktop && "d-grid two-column"
+        } `}
+      >
         <div className={`${styles.contact_us} ${visibilityClass}`}>
           <div>
             <h3 className={`${styles.title}`}>Kontaktieren Sie uns!</h3>
@@ -79,6 +102,7 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           <textarea name='message' placeholder='Ihre Nachricht' />
           <button className={styles.submit_btn}>Abschicken</button>
         </form>
+        {isFormSubmitted && <ConfirmationDialog setStatus={setIsFormSubmitted}/>}
       </div>
     </div>
   );
