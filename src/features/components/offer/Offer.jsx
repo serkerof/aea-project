@@ -9,7 +9,9 @@ const Offer = ({ setStatus }) => {
   }, 5000);
 
   return (
-    <div className={`${styles.offer_container} d-flex slide-from-right`}>
+    <div
+      className={`${styles.offer_container} d-flex slide-from-right align-center`}
+    >
       {showMessage && (
         <p className={`${styles.offer_message}`}>
           Wollen Sie von uns ein angebot bekommen?
