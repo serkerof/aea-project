@@ -3,6 +3,30 @@
     overflow-x: hidden;
 }
 
+.about_company {
+    background-color: #FFB522;
+    color: #000;
+    margin-bottom: -40px;
+}
+
+.info_section {
+    margin-bottom: 40px;
+    padding: 40px 20px 20px;
+}
+
+.info_section .title {
+    font-weight: 600;
+}
+
+.contact_btn {
+    margin: 10px;
+    background-color: #05A8AA;
+    padding: 10px;
+    font-size: var(--text-size);
+    border-radius: 18px;
+    color: white;
+}
+
 .service_logo {
     margin: 40px 0px;
     width: 150px;
@@ -10,16 +34,67 @@
 }
 
 .service_desc {
-    color: var(--main-color);
     line-height: var(--text-line-height);
     font-size: var(--text-size);
-    padding: 0px 20px 20px;
 }
 
 .service_subtitle {
-    color: var(--main-color);
     line-height: var(--text-line-height);
     font-size: var(--text-size);
-    padding-bottom: 50px;
+    margin: 20px 0px;
 }
 
+.hint {
+    background-color: #FFB522;
+    font-size: var(--text-size);
+    /* color: var(--main-color); */
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.night_service {
+    background-color: #253147;
+    color: white;
+    padding: 40px 0px;
+}
+
+.night_service .img_section {
+    width: 50%;
+    height: inherit;
+
+}
+
+.night_service .img_section .img {
+    height: 250px;
+}
+
+.divider {
+    width: inherit;
+    height: 2.5px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.sub_title {
+    font-size: var(--text-size);
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+@media screen and (min-width: 650px) {
+    .info_section {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .info_section {
+        width: 50%;
+    }
+
+    .service_desc {
+        width: 70%;
+    }
+}

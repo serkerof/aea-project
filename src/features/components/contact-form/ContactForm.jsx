@@ -32,7 +32,7 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
   }, []);
 
   const handleSubmit = (e) => {
-    setIsFormSubmitted(true)
+    setIsFormSubmitted(true);
     emailjs
       .sendForm(
         "service_ebbwn4f",
@@ -46,10 +46,7 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
   };
 
   return (
-    <div
-      className={`${styles.container} d-flex justify-center align-center `}
-      ref={contactFormRef}
-    >
+    <div className={`${styles.container} d-flex justify-center align-center `}>
       <div
         className={`${styles.context_container} ${
           isDesktop && "d-grid two-column"
@@ -80,6 +77,7 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           </div>
           <div
             className={`${styles.social_media_group} d-flex justify-between`}
+            ref={contactFormRef}
           >
             <a href={facebook.link} className={`${styles.link}`}>
               <BsInstagram size={20} className={`${styles.icon}`} />
@@ -102,7 +100,9 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           <textarea name='message' placeholder='Ihre Nachricht' />
           <button className={styles.submit_btn}>Abschicken</button>
         </form>
-        {isFormSubmitted && <ConfirmationDialog setStatus={setIsFormSubmitted}/>}
+        {isFormSubmitted && (
+          <ConfirmationDialog setStatus={setIsFormSubmitted} />
+        )}
       </div>
     </div>
   );
