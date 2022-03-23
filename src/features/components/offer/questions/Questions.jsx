@@ -8,6 +8,12 @@ import Option from "./Option";
 import Calendar from "./Calendar";
 import ContactForm from "./ContactForm";
 import emailjs from "@emailjs/browser";
+import {
+  FormControl,
+  FormControlLabel,
+  Radio,
+  RadioGroup,
+} from "@mui/material";
 const Questions = () => {
   const allQuestions = useSelector(selectAllQuestions);
   let [currentQuestion, setCurrentQuestion] = useState(0);
@@ -27,19 +33,19 @@ const Questions = () => {
   const sendEmail = () => {
     const template_object = {
       service: data[0].answer.title,
-      placementType:  data[1].answer.title,
-      placementSize:  data[2].answer,
+      placementType: data[1].answer.title,
+      placementSize: data[2].answer,
       floor: data[3].answer,
-      parking:  data[4].answer,
-      wishedAppointment:  data[5].answer,
-      city:  data[6].answer.city.value,
+      parking: data[4].answer,
+      wishedAppointment: data[5].answer,
+      city: data[6].answer.city.value,
       email: data[6].answer.email.value,
-      forename:  data[6].answer.forename.value,
-      surname:  data[6].answer.surname.value,
+      forename: data[6].answer.forename.value,
+      surname: data[6].answer.surname.value,
       street: data[6].answer.street.value,
-      postIndex:  data[6].answer.postIndex.value,
-      phoneNumber:  data[6].answer.phoneNumber.value,
-      homeNumber:  data[6].answer.homeNumber.value,
+      postIndex: data[6].answer.postIndex.value,
+      phoneNumber: data[6].answer.phoneNumber.value,
+      homeNumber: data[6].answer.homeNumber.value,
     };
     emailjs
       .send(
@@ -147,16 +153,18 @@ const Questions = () => {
       setCurrentAnswer={setCurrentAnswer}
     />
   ) : question.id === "parking" ? (
-    <form className={` ${styles.parking} d-flex justify-around`}>
-      <label htmlFor='' onClick={() => setCurrentAnswer("Ja")}>
-        Ja
-        <input type='radio' />
-      </label>
-      <label htmlFor='' onClick={() => setCurrentAnswer("Nein")}>
-        Nein
-        <input type='radio' />
-      </label>
-    </form>
+    <FormControl>
+      <RadioGroup
+        row
+        value={currentAnswer}
+        onChange={(e) => setCurrentAnswer(e.target.value)}
+        aria-labelledby='demo-radio-buttons-group-label'
+        name='radio-buttons-group'
+      >
+        <FormControlLabel value='Ja' control={<Radio />} label='Ja' />
+        <FormControlLabel value='Nein' control={<Radio />} label='Nein' />
+      </RadioGroup>
+    </FormControl>
   ) : question.id === "wishedAppointment" ? (
     <Calendar setCurrentAnswer={setCurrentAnswer} />
   ) : question.id === "contactData" ? (

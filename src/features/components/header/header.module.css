@@ -7,9 +7,10 @@
 }
 
 .paragraph {
+    text-align: center;
     color: var(--main-color);
     margin-bottom: 30px;
-    width: 80%;
+    width: 100%;
 }
 
 .paragraph h1 {
@@ -92,5 +93,11 @@
 
     .link_button {
         padding: 29px 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .paragraph {
+        width: 60%;
     }
 }
