@@ -8,15 +8,15 @@ import {
   AiOutlineWhatsApp,
   AiOutlineMail,
 } from "react-icons/ai";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import ConfirmationDialog from "../confirmation-dialog/ConfirmationDialog";
-
 const ContactForm = ({ contactFormRef, visibilityClass }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
   const [isDesktop, setIsDesktop] = useState(false);
+  let formRef = useRef();
 
   const updateDimensions = () => {
     setScreenWidth(window.innerWidth);
@@ -32,6 +32,7 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
   }, []);
 
   const handleSubmit = (e) => {
+    formRef.reset();
     setIsFormSubmitted(true);
     emailjs
       .sendForm(
@@ -46,7 +47,10 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
   };
 
   return (
-    <div className={`${styles.container} d-flex justify-center align-center `}>
+    <div
+      className={`${styles.container} d-flex justify-center align-center `}
+      ref={contactFormRef}
+    >
       <div
         className={`${styles.context_container} ${
           isDesktop && "d-grid two-column"
@@ -56,10 +60,8 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           <div>
             <h3 className={`${styles.title}`}>Kontaktieren Sie uns!</h3>
             <p className={`${styles.desc}`}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              nobis unde dolores officia nulla nemo doloribus rerum perferendis
-              dolor aliquam fugiat eos, corporis distinctio eveniet laudantium
-              quos velit odit tempora.
+              Wir sind rund um die Uhr für Sie Da! <br /> Um Ihrer Anfragen
+              Schnellstmöglich beantworten zu können. Kontaktieren Sie uns!
             </p>
           </div>
           <div className={`${styles.data}`}>
@@ -77,7 +79,6 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           </div>
           <div
             className={`${styles.social_media_group} d-flex justify-between`}
-            ref={contactFormRef}
           >
             <a href={facebook.link} className={`${styles.link}`}>
               <BsInstagram size={20} className={`${styles.icon}`} />
@@ -90,7 +91,11 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
             </a>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className={`${styles.contact_form}`}>
+        <form
+          onSubmit={handleSubmit}
+          className={`${styles.contact_form}`}
+          ref={(ref) => (formRef = ref)}
+        >
           <h3 className={`${styles.title}`}>Sende uns eine Nachrict!</h3>
           <div className={`${styles.name_input} d-flex`}>
             <input type='text' name='forename' placeholder='Vorname' />

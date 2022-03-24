@@ -1,9 +1,15 @@
+import { useState } from "react";
 import Tag from "../../../components/tag/Tag";
 import ClearenceServicesLinks from "../../../components/clearence-services-links/clearenceServicesLinks";
 import sectionImg from "./assets/img/kelleraufloesung-bielefeld.jpg";
 import styles from "./../services.module.css";
-
+import ServiceOffer from "../../../components/offer/ServiceOffer";
 const GarageClearence = () => {
+  const [openDialog, setOpenDialog] = useState();
+
+  const closeDialog = () => {
+    setOpenDialog(null);
+  };
   return (
     <div className={`${styles.container}`}>
       <ClearenceServicesLinks currentService='garage' />
@@ -36,7 +42,6 @@ const GarageClearence = () => {
           Bielefeld.
         </p>
       </section>
-
       <section className={`${styles}`}>
         <p className={`${styles}`}>
           Zuverlässige Entrümpelung in Bielefeld Für uns ist es sehr wichtig,
@@ -114,7 +119,12 @@ const GarageClearence = () => {
           zufriedenstellende und seriöse Abwicklung zu.
         </p>
       </section>
-      <Tag />
+      <Tag />{" "}
+      <ServiceOffer
+        openDialog={openDialog}
+        setOpenDialog={setOpenDialog}
+        closeDialog={closeDialog}
+      />
     </div>
   );
 };

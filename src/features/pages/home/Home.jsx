@@ -22,7 +22,7 @@ const Home = ({ contactFormRef }) => {
             Wenn es um vertrauen oder zuverläsigem Arbeit geht, wir sind da
             bereit. Unsere Ziel ist Ihre wünsche schnell und im bestem Zustand
             erledigen. Bei uns sind Sie auch garantiert. Wir freuen uns auf
-            zusammenarbeit!
+            Zusammenarbeit!
             <br />
             <strong className={`${styles.service_subtitle}`}>
               Ihre AEA Team

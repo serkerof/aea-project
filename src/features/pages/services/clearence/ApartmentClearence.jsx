@@ -2,8 +2,14 @@ import Tag from "../../../components/tag/Tag";
 import ClearenceServicesLinks from "../../../components/clearence-services-links/clearenceServicesLinks";
 import sectionImage from "./assets/img/wohnungsaufloesung-bielefeld.jpg";
 import styles from "./../services.module.css";
-
+import { useState } from "react";
+import ServiceOffer from "../../../components/offer/ServiceOffer";
 const ApartmentClearence = () => {
+  const [openDialog, setOpenDialog] = useState();
+
+  const closeDialog = () => {
+    setOpenDialog(null);
+  };
   return (
     <div className={`${styles.container}`}>
       <ClearenceServicesLinks currentService='apartment' />
@@ -35,7 +41,6 @@ const ApartmentClearence = () => {
           Bielefeld.
         </p>
       </section>
-
       <section>
         <h2>Unser Leistungsspektrum bei der Wohnungsauflösung Bielefeld</h2>
         <p>
@@ -128,7 +133,12 @@ const ApartmentClearence = () => {
           zufriedenstellende und seriöse Abwicklung zu.
         </p>
       </section>
-      <Tag />
+      <Tag />{" "}
+      <ServiceOffer
+        openDialog={openDialog}
+        setOpenDialog={setOpenDialog}
+        closeDialog={closeDialog}
+      />
     </div>
   );
 };

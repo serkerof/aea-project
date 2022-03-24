@@ -26,7 +26,7 @@ const Profit = () => {
     <div className={`${styles.container}`}>
       <h2 className={`${styles.title}`}>So profitieren Sie bei uns!</h2>
       <div className={`${styles.divider}`}></div>
-      <h3 className={`${styles.sub_title}`}>Unsere vorteile</h3>
+      <h3 className={`${styles.sub_title}`}>Unsere Vorteile</h3>
       {/*  */}
       <div className={`${isDesktop && "d-grid two-column"}`}>
         <div
@@ -64,7 +64,7 @@ const Profit = () => {
           >
             <h4 className={`${styles.topic_title}`}>Kostenlose Termin</h4>
             <p className={`${styles.topic_desc}`}>
-              Sie werden vor Ort kostenlos besucht und ein Angebot bekommen
+              Sie werden vor Ort kostenlos besucht und ein Angebot bekommen.
             </p>
           </section>
           <section
@@ -73,7 +73,7 @@ const Profit = () => {
             <h4 className={`${styles.topic_title}`}>Wertvolle Dienst </h4>
             <p className={`${styles.topic_desc}`}>
               Mit hohem verantwortungsvoll werden wir uns um von Ihnen
-              beauftragte Dienstleistung kümmern
+              beauftragte Dienstleistung kümmern.
             </p>
           </section>
           <section
@@ -81,7 +81,7 @@ const Profit = () => {
           >
             <h4 className={`${styles.topic_title}`}>Schnell</h4>
             <p className={`${styles.topic_desc}`}>
-              Sie werden sehr schnell behandelt und ein Besuchtermin kriegen
+              Sie werden sehr schnell behandelt und ein Besuchtermin kriegen.
             </p>
           </section>
           <section
@@ -89,8 +89,8 @@ const Profit = () => {
           >
             <h4 className={`${styles.topic_title}`}>Schlüssel fertig</h4>
             <p className={`${styles.topic_desc}`}>
-              Alles gewünschte und vereinbarte Aufgaben werden erledigt und
-              Schlüssel fertig abgegeben
+              Alle gewünschte und vereinbarte Aufgaben werden erledigt und
+              Schlüssel fertig abgegeben.
             </p>
           </section>
         </div>

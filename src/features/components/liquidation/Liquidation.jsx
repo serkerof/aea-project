@@ -20,7 +20,7 @@ const Liquidation = () => {
             <h5 className={`${styles.step_title}`}>Kostenlose Besuch</h5>
             <p className={`${styles.desc}`}>
               Wir werden an einem vereinbartem Ort ohne zusätzlichem kosten
-              treffen
+              treffen.
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Liquidation = () => {
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Feste Preis</h5>
             <p className={`${styles.desc}`}>
-              Sie werden keine versteckte kosten erhalten
+              Sie werden keine versteckte kosten erhalten.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Liquidation = () => {
             <h5 className={`${styles.step_title}`}>Unsere Dienst</h5>
             <p className={`${styles.desc}`}>
               Wir werden uns mit zuverlässigkeit um Ihrer gewünschte Dienst
-              kümmern
+              kümmern.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Liquidation = () => {
             <h5 className={`${styles.step_title}`}>Tätigkeiten und Rechnung</h5>
             <p className={`${styles.desc}`}>
               Am ende bekommen Sie alle von uns geleistete Tätigkeiten sowie
-              Rechnung
+              Rechnung.
             </p>
           </div>
         </div>

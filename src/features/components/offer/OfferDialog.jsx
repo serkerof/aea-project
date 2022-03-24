@@ -75,7 +75,9 @@ const OfferDialog = ({ setStatus }) => {
               <button
                 className={`${styles.get_offer_btn}`}
                 onClick={() => {
-                  openSelectedComponent(<Questions />);
+                  openSelectedComponent(
+                    <Questions handleCloseDialog={handleClose} />
+                  );
                 }}
               >
                 Angebot Erhalten

@@ -1,8 +1,15 @@
 import Tag from "../../components/tag/Tag";
 import sectionImg from "./assets/img/entruempelung.jpg";
 import styles from "./services.module.css";
+import { useState } from "react";
+import ServiceOffer from "../../components/offer/ServiceOffer";
 
 const ClearingOut = () => {
+  const [openDialog, setOpenDialog] = useState();
+
+  const closeDialog = () => {
+    setOpenDialog(null);
+  };
   return (
     <div className={`${styles.container}`}>
       <h1 className={`${styles.topic_title}`}>Entrümpelung</h1>
@@ -34,7 +41,6 @@ const ClearingOut = () => {
           Bielefeld.
         </p>
       </section>
-
       <section>
         <p>
           Zuverlässige Entrümpelung in Bielefeld Für uns ist es sehr wichtig,
@@ -112,7 +118,12 @@ const ClearingOut = () => {
           zufriedenstellende und seriöse Abwicklung zu.
         </p>
       </section>
-      <Tag />
+      <Tag />{" "}
+      <ServiceOffer
+        openDialog={openDialog}
+        setOpenDialog={setOpenDialog}
+        closeDialog={closeDialog}
+      />
     </div>
   );
 };

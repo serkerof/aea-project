@@ -1,9 +1,15 @@
+import { useState } from "react";
 import Tag from "../../../components/tag/Tag";
 import ClearenceServicesLinks from "../../../components/clearence-services-links/clearenceServicesLinks";
 import firmenaufloesungImg from "./assets/img/firmenaufloesung-bielefeld.jpg";
 import styles from "./../services.module.css";
-
+import ServiceOffer from "../../../components/offer/ServiceOffer";
 const OfficeClearence = () => {
+  const [openDialog, setOpenDialog] = useState();
+
+  const closeDialog = () => {
+    setOpenDialog(null);
+  };
   return (
     <div className={`${styles.container}`}>
       <ClearenceServicesLinks currentService='office' />
@@ -40,7 +46,6 @@ const OfficeClearence = () => {
           Einhaltung der festgelegten Zeitpläne aufmerksam.
         </p>
       </section>
-
       <section>
         <h2 className={`${styles.section_title}`}>
           Auflösung von Unternehmen in Bielefeld
@@ -108,6 +113,11 @@ const OfficeClearence = () => {
         </p>
       </section>
       <Tag />
+      <ServiceOffer
+        openDialog={openDialog}
+        setOpenDialog={setOpenDialog}
+        closeDialog={closeDialog}
+      />
     </div>
   );
 };

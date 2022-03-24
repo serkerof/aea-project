@@ -10,9 +10,6 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
 
   const handleSubmenuHover = (key, value) => {
     setSubmenuHover({ [key]: value });
-    // submenuHover[key]
-    //   ? setSubmenuHover(Object.assign({}, submenuHover, { [key]: value }))
-    //   : (submenuHover[key] = value);
   };
 
   const subMenu = (
@@ -20,7 +17,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          navigate("/haushaltsaufloesung");
+          // navigate("/haushaltsaufloesung");
         }}
       >
         Haushaltsauflösung
@@ -28,7 +25,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          navigate("/entruempelung");
+          // navigate("/entruempelung");
         }}
       >
         Entrümpelung
@@ -36,7 +33,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          navigate("/kleine-umzuege");
+          // navigate("/kleine-umzuege");
         }}
       >
         Kleine Umzüge
@@ -44,7 +41,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          navigate("/gartenpflege");
+          // navigate("/gartenpflege");
         }}
       >
         Gartenpflege
@@ -52,7 +49,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          navigate("/hausreinigung");
+          // navigate("/hausreinigung");
         }}
       >
         Hausreinigung
@@ -60,7 +57,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          navigate("/glasreinigung");
+          // navigate("/glasreinigung");
         }}
       >
         Glasreinigung

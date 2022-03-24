@@ -17,7 +17,7 @@ const Header = ({ contactFormRef }) => {
       >
         <div className={`${styles.paragraph} d-flex direction-column `}>
           <h1>A. E. A. Dienstleistungen</h1>
-          <h3>Versuch ist gold Wert</h3>
+          <h3>Versuch ist Gold Wert.</h3>
         </div>
         <div
           className={`${styles.contact_form} d-flex direction-column align-center justify-center`}

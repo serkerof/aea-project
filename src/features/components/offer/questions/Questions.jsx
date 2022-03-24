@@ -14,8 +14,10 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-const Questions = () => {
+import ConfirmationDialog from "../../confirmation-dialog/ConfirmationDialog";
+const Questions = ({ handleCloseDialog }) => {
   const allQuestions = useSelector(selectAllQuestions);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   let [currentQuestion, setCurrentQuestion] = useState(0);
   const question = useSelector((state) =>
     selectQuestion(state, currentQuestion + 1)
@@ -277,11 +279,18 @@ const Questions = () => {
           <button
             className={`${styles.send_btn}`}
             onClick={() => {
-              sendEmail();
+              // sendEmail();
+              setIsFormSubmitted(true);
             }}
           >
             Abschicken
           </button>
+          {isFormSubmitted && (
+            <ConfirmationDialog
+              setStatus={setIsFormSubmitted}
+              handleCloseDialog={handleCloseDialog && handleCloseDialog}
+            />
+          )}
         </div>
       )}
     </div>

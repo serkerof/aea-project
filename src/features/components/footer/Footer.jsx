@@ -9,7 +9,6 @@ const Footer = () => {
   const navigate = useNavigate();
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
-
   return (
     <div className={`${styles.container} d-flex flex-wrap justify-between`}>
       <div className={`${styles.contact_container}`}>
@@ -48,9 +47,27 @@ const Footer = () => {
           <div className={`${styles.divider}`}></div>
         </h5>
         <ul className={`${styles.region_list}`}>
-          <li onClick={()=>{navigate("/kontakt")}}>Kontakt</li>
-          <li onClick={()=>{navigate("/impressum")}}>Impressum</li>
-          <li onClick={()=>{navigate("/datenschutz")}}>Datenschutz</li>
+          <li
+            onClick={() => {
+              navigate("/kontakt");
+            }}
+          >
+            Kontakt
+          </li>
+          <li
+            onClick={() => {
+              navigate("/impressum");
+            }}
+          >
+            Impressum
+          </li>
+          <li
+            onClick={() => {
+              navigate("/datenschutz");
+            }}
+          >
+            Datenschutz
+          </li>
         </ul>
       </div>
       <div>
@@ -62,49 +79,49 @@ const Footer = () => {
         <ul className={`${styles.services_list}`}>
           <li
             onClick={() => {
-              navigate("/haushaltsaufloesung");
+              // navigate("/haushaltsaufloesung");
             }}
           >
             Haushaltsauflösung
           </li>
           <li
             onClick={() => {
-              navigate("/entruempelung");
+              // navigate("/entruempelung");
             }}
           >
             Entrümpelung
           </li>
           <li
             onClick={() => {
-              navigate("/kleine-umzuege");
+              // navigate("/kleine-umzuege");
             }}
           >
             Kleine Umzüge
           </li>
           <li
             onClick={() => {
-              navigate("/hausreinigung");
+              // navigate("/hausreinigung");
             }}
           >
             Hausreinigung
           </li>
           <li
             onClick={() => {
-              navigate("/glasreinigung");
+              // navigate("/glasreinigung");
             }}
           >
             Glasreinigung
           </li>
           <li
             onClick={() => {
-              navigate("/gartenpflege");
+              // navigate("/gartenpflege");
             }}
           >
             Gartenpflege
           </li>
           <li
             onClick={() => {
-              navigate("/abflussreinigung");
+              // navigate("/abflussreinigung");
             }}
           >
             Abflussreinigung

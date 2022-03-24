@@ -41,7 +41,7 @@ const OurServices = ({ setDialogStatus }) => {
     >
       <h2 className={`${styles.title}`}>Unsere Leistungen</h2>
       <div className={`${styles.title_divider}`}></div>
-      <h3 className={`${styles.subtitle}`}>Wir sind fur sie da</h3>
+      <h3 className={`${styles.subtitle}`}>Wir sind für Sie da!</h3>
       {/* <div className={`${styles.service_group} d-flex justify-around`}> */}
       <AliceCarousel
         autoPlay
