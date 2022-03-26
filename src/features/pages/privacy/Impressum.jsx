@@ -10,6 +10,7 @@ const Impressum = () => {
       <div className={`${styles.container}`}>
         <h4>Impressum</h4>
         <p>AEA Dienstleistung</p>
+        <p>Asif Davidov</p>
         <p>Von Galen Straße 40</p>
         <p>33129 Delbrück</p>
         <p>Deutschland</p>
