@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import ContactForm from "./ContactForm";
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";
@@ -9,25 +8,12 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import styles from "./styles.module.css";
+import Responsive from "../../responsive/Responsive";
 
 const ContactFormDialog = ({ setStatus }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
-  const [screenWidth, setScreenWidth] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  const updateDimensions = () => {
-    setScreenWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    screenWidth > 1024 ? setIsDesktop(true) : setIsDesktop(false);
-  }, [screenWidth]);
-
-  useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", updateDimensions);
-  }, []);
+  const isDesktop = Responsive().isDesktop;
 
   return (
     <div

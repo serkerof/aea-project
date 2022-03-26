@@ -1,26 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./offer.module.css";
 import { IoMdReturnLeft } from "react-icons/io";
 import Questions from "./questions/Questions";
 import ContactFormDialog from "../contact-form/ContactFormDialog";
+import Responsive from "../../responsive/Responsive";
 
 const OfferDialog = ({ setStatus }) => {
   const [selectedComponent, setSelectedComponent] = useState();
-  const [screenWidth, setScreenWidth] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  const updateDimensions = () => {
-    setScreenWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    screenWidth > 1024 ? setIsDesktop(true) : setIsDesktop(false);
-  }, [screenWidth]);
-
-  useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", updateDimensions);
-  }, []);
+  const isDesktop = Responsive().isDesktop;
 
   const handleClose = () => {
     document.body.style.overflow = "auto";

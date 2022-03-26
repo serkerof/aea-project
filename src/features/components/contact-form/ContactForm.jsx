@@ -8,28 +8,16 @@ import {
   AiOutlineWhatsApp,
   AiOutlineMail,
 } from "react-icons/ai";
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import ConfirmationDialog from "../confirmation-dialog/ConfirmationDialog";
+import Responsive from "../../responsive/Responsive";
+
 const ContactForm = ({ contactFormRef, visibilityClass }) => {
   const [email, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(false);
+  const isDesktop = Responsive().isDesktop;
   let formRef = useRef();
-
-  const updateDimensions = () => {
-    setScreenWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    screenWidth > 1024 ? setIsDesktop(true) : setIsDesktop(false);
-  }, [screenWidth]);
-
-  useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", updateDimensions);
-  }, []);
 
   const handleSubmit = (e) => {
     formRef.reset();

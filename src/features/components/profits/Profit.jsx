@@ -1,26 +1,12 @@
+import Responsive from "../../responsive/Responsive";
 import sectionIcon from "./assets/icon/damenhoch.png";
 import firstTopicImg from "./assets/icon/freie-besuch.png";
 import secondTopicImg from "./assets/icon/zuverlaessigkeit.png";
 import thirdTopicImg from "./assets/icon/schnell.png";
 import fourthTopicImg from "./assets/icon/schluessel-fertig.png";
 import styles from "./styles.module.css";
-import { useEffect, useState } from "react";
 const Profit = () => {
-  const [screenWidth, setScreenWidth] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  const updateDimensions = () => {
-    setScreenWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    screenWidth > 1024 ? setIsDesktop(true) : setIsDesktop(false);
-  }, [screenWidth]);
-
-  useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", updateDimensions);
-  }, []);
+  const isDesktop = Responsive().isDesktop;
 
   return (
     <div className={`${styles.container}`}>
