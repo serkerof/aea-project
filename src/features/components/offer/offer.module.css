@@ -30,7 +30,7 @@
     height: 62px;
     background-color: var(--third-color);
     color: var(--second-color);
-    position: relative
+    position: relative;
 }
 
 .button::before {
@@ -38,7 +38,7 @@
     position: absolute;
     bottom: -6px;
     right: -6px;
-    border: 1px solid orange;
+    border: 1px solid var(--second-color);
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     border-radius: 50%;
@@ -50,7 +50,7 @@
     position: absolute;
     bottom: -6px;
     right: -6px;
-    border: 1px solid ORANGE;
+    border: 1px solid var(--second-color);
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     border-radius: 50%;
