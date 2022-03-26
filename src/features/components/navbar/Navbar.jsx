@@ -75,8 +75,12 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
         Leistungen
         {submenuHover.services === true && subMenu}
       </li>
-      <li className={`${styles.item}`} onClick={()=> navigate("/ueber-uns")}>Über uns</li>
-      <li className={`${styles.item}`} onClick={()=> navigate("/kontakt")}>Kontakt</li>
+      <li className={`${styles.item}`} onClick={() => navigate("/ueber-uns")}>
+        Über uns
+      </li>
+      <li className={`${styles.item}`} onClick={() => navigate("/kontakt")}>
+        Kontakt
+      </li>
     </ul>
   );
 
