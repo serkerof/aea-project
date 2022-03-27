@@ -52,6 +52,10 @@
     top: 10px;
 }
 
+.sub_link {
+    text-shadow: none;
+}
+
 
 @media screen and (min-width: 768px) {}
 

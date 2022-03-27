@@ -188,7 +188,7 @@
 
     .outer:nth-child(even) {
         transform: rotate(180deg);
-        top: 225px !important;
+        top: 230px !important;
     }
 
     .outer:nth-child(even) .paragraph {
@@ -217,6 +217,6 @@
     }
 
     .outer:nth-child(5) {
-        left: 541px;
+        left: 540.5px;
     }
 }
