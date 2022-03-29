@@ -64,7 +64,7 @@ const Datenschutz = () => {
           folgenden Begriffe:
         </p>
 
-        <ul >
+        <ul>
           <li>
             <h4>a)    personenbezogene Daten</h4>
             <p>
@@ -291,7 +291,7 @@ const Datenschutz = () => {
         </p>
 
         <h4>6. Rechte der betroffenen Person</h4>
-        <ul >
+        <ul>
           <li>
             <h4>a)    Recht auf Bestätigung</h4>
             <p>

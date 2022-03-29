@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 import styles from "./navbar.module.css";
@@ -89,14 +89,14 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <img
         className={`${styles.logo}`}
         src={logo}
-        alt=''
+        alt='AEA Dienstleistungen Logo'
         onClick={() => navigate("/")}
       />
       <span
         className={`${styles.hamburger_icon_container} desktop-none`}
         onClick={() => setDisplayHamburgerMenu(true)}
       >
-        <GiHamburgerMenu size={30} className={`${styles.hamburger_icon}`} />
+        <MenuIcon fontSize="large" className={`${styles.hamburger_icon}`} />
       </span>
       {links}
     </div>

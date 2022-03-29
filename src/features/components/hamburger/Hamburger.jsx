@@ -1,10 +1,10 @@
 import styles from "./hamburger.module.css";
-import { BsInstagram } from "react-icons/bs";
 import {
-  AiFillFacebook,
-  AiOutlineWhatsApp,
-  AiFillCaretDown,
-} from "react-icons/ai";
+  Instagram,
+  Facebook,
+  WhatsApp,
+  ArrowDropDown,
+} from "@mui/icons-material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -14,7 +14,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
   const navigate = useNavigate();
   const [dropDownMenu, setDropDownMenu] = useState(false);
   const [, phone, instagram, facebook, whatsapp] =
-  useSelector(selectAllContactData);
+    useSelector(selectAllContactData);
 
   const handleNavigate = (path) => {
     navigate(path);
@@ -51,7 +51,7 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               setDropDownMenu(!dropDownMenu);
             }}
           >
-            Leistungen <AiFillCaretDown className={`${styles.caret}`} />
+            Leistungen <ArrowDropDown className={`${styles.caret}`} />
           </p>
           {dropDownMenu ? (
             <ul className={`${styles.submenu}`}>
@@ -108,9 +108,14 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
             ""
           )}
         </li>
-        <li className={`${styles.link}`}  onClick={() => {
-                  handleNavigate("/kontakt");
-                }}>Kontakt</li>
+        <li
+          className={`${styles.link}`}
+          onClick={() => {
+            handleNavigate("/kontakt");
+          }}
+        >
+          Kontakt
+        </li>
       </ul>
       <div
         className={`${styles.contact_infos} d-flex justify-between align-center`}
@@ -123,13 +128,13 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
         </a>
         <ul className={`${styles.social_media_groups} d-flex justify-between`}>
           <a href={instagram.link}>
-            <BsInstagram className={`${styles.icon}`} size={23} />
+            <Instagram className={`${styles.icon}`} />
           </a>
           <a href={facebook.link}>
-            <AiFillFacebook className={`${styles.icon}`} size={23} />
+            <Facebook className={`${styles.icon}`} />
           </a>
           <a href={whatsapp.link}>
-            <AiOutlineWhatsApp className={`${styles.icon}`} size={23} />
+            <WhatsApp className={`${styles.icon}`} />
           </a>
         </ul>
       </div>

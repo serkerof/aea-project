@@ -1,6 +1,6 @@
 import houseClearenceImg from "./../assets/img/haushaltsaufloesung.jpg";
-import entruempelungImg from "./../assets/img/entruempelung.jpg";
-import houseImg from "./../assets/img/haushaltsaufloesung-.jpg";
+import entruempelungImg from "./../assets/img/entruempelung.png";
+import houseImg from "./../assets/img/haus.jpg";
 import apartmentImg from "./../assets/img/wohnungaufloesung.jpg";
 import officeImg from "./../assets/img/firmenaufloesung.jpg";
 

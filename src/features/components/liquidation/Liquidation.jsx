@@ -14,7 +14,7 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={visitImg} alt='' className={`${styles.icon}`} />
+            <img src={visitImg} alt='Kostenlose Besuch' className={`${styles.icon}`} />
           </div>
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Kostenlose Besuch</h5>
@@ -28,7 +28,7 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={reliablityImg} alt='' className={`${styles.icon}`} />
+            <img src={reliablityImg} alt='Feste Preis' className={`${styles.icon}`} />
           </div>
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Feste Preis</h5>
@@ -41,7 +41,7 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={serviceImg} alt='' className={`${styles.icon}`} />
+            <img src={serviceImg} alt='Unsere Tätigkeiten leisten' className={`${styles.icon}`} />
           </div>
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Unsere Dienst</h5>
@@ -55,7 +55,7 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={keyReadyImg} alt='' className={`${styles.icon}`} />
+            <img src={keyReadyImg} alt='Schlüssel fertig Abgabe' className={`${styles.icon}`} />
           </div>
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Schlüssel Fertig</h5>
@@ -69,7 +69,7 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={priceImg} alt='' className={`${styles.icon}`} />
+            <img src={priceImg} alt='Tätigkeiten und Rechnung' className={`${styles.icon}`} />
           </div>
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Tätigkeiten und Rechnung</h5>

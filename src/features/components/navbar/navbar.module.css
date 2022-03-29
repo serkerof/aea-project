@@ -34,13 +34,15 @@
 }
 
 .hamburger_icon_container {
-    padding: 10px 10px 5px;
+    padding: 5px;
+    padding-bottom: 0px;
     border-radius: 10px;
     background-color: var(--second-color);
 }
 
 .hamburger_icon {
-    fill: var(--main-color)
+    color: var(--main-color);
+    font-size: 30px;
 }
 
 .icon {

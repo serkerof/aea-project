@@ -14,7 +14,7 @@ const SliderService = () => {
   const renderedItems = allServices.map((item) => {
     return (
       <div className={`d-flex direction-column align-center justify-center`}>
-        <img className={`${styles.img}`} src={item.icon} alt='' />
+        <img className={`${styles.img}`} src={item.icon} alt={item.imageAlt} />
         <p className={`${styles.img_subtitle}`}>{item.title}</p>
       </div>
     );

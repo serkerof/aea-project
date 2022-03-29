@@ -1,5 +1,5 @@
 import styles from "./offer.module.css";
-import { FiUser } from "react-icons/fi";
+import PersonIcon from '@mui/icons-material/Person';
 import { useState } from "react";
 const Offer = ({ setStatus }) => {
   const [showMessage, setShowMessage] = useState(true);
@@ -18,7 +18,7 @@ const Offer = ({ setStatus }) => {
         </p>
       )}
       <button className={`${styles.button}`} onClick={() => setStatus(true)}>
-        <FiUser size={35} />
+        <PersonIcon fontSize="large" />
       </button>
     </div>
   );

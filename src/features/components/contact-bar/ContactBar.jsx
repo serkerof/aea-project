@@ -1,6 +1,6 @@
 import styles from "./contactBar.module.css";
-import { BsTelephone } from "react-icons/bs";
-import { BiMessageDetail } from "react-icons/bi";
+import CallIcon from '@mui/icons-material/Call';
+import MessageIcon from '@mui/icons-material/Message';
 import { useSelector } from "react-redux";
 import { selectContactData } from "../../data/contactDataSlice";
 import { useState } from "react";
@@ -21,7 +21,7 @@ const ContactBar = ({ contactFormRef }) => {
         href={`tel:${phone.number}`}
         className={`${styles.icon_container} d-flex justify-center`}
       >
-        <BsTelephone className={`${styles.icon}`} size={24} />
+        <CallIcon className={`${styles.icon}`}  />
         <p className={`${styles.sub_title}`}>&nbsp; Anrufen</p>
       </a>
       <div
@@ -32,7 +32,7 @@ const ContactBar = ({ contactFormRef }) => {
             : setStatus(true)
         }
       >
-        <BiMessageDetail className={`${styles.icon}`} size={26} />
+        <MessageIcon className={`${styles.icon}`}  />
         <p className={`${styles.sub_title}`}>&nbsp; Kontaktieren</p>
       </div>
     </div>

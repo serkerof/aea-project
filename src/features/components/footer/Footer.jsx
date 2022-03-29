@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";
 import { useNavigate } from "react-router-dom";
-import { BsInstagram } from "react-icons/bs";
-import { AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai";
+import { Instagram, Facebook, WhatsApp } from "@mui/icons-material";
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -30,13 +29,13 @@ const Footer = () => {
           </li>
           <li className={`${styles.icon_group} d-flex justify-around`}>
             <a href={`${instagram.link}`}>
-              <BsInstagram className={`${styles.icon}`} />
+              <Instagram className={`${styles.icon}`} />
             </a>
             <a href={`${facebook.link}`}>
-              <AiFillFacebook className={`${styles.icon}`} />
+              <Facebook className={`${styles.icon}`} />
             </a>
             <a href={`${whatsapp.link}`}>
-              <AiOutlineWhatsApp className={`${styles.icon}`} />
+              <WhatsApp className={`${styles.icon}`} />
             </a>
           </li>
         </ul>

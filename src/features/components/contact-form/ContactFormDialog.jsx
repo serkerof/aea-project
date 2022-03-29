@@ -1,12 +1,13 @@
 import ContactForm from "./ContactForm";
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";
-import { BsInstagram, BsTelephone } from "react-icons/bs";
 import {
-  AiFillFacebook,
-  AiOutlineWhatsApp,
-  AiOutlineMail,
-} from "react-icons/ai";
+  Call,
+  Instagram,
+  Facebook,
+  WhatsApp,
+  Email,
+} from "@mui/icons-material";
 import styles from "./styles.module.css";
 import Responsive from "../../responsive/Responsive";
 
@@ -40,16 +41,13 @@ const ContactFormDialog = ({ setStatus }) => {
               className={` ${styles.dialog_media_group} d-flex justify-between`}
             >
               <a href={facebook.link} className={`${styles.link}`}>
-                <BsInstagram size={20} className={`${styles.dialog_icon}`} />
+                <Instagram className={`${styles.dialog_icon}`} />
               </a>
               <a href={instagram.link} className={`${styles.link}`}>
-                <AiFillFacebook size={20} className={`${styles.dialog_icon}`} />
+                <Facebook className={`${styles.dialog_icon}`} />
               </a>
               <a href={whatsapp.link} className={`${styles.link}`}>
-                <AiOutlineWhatsApp
-                  size={20}
-                  className={`${styles.dialog_icon}`}
-                />
+                <WhatsApp size={20} className={`${styles.dialog_icon}`} />
               </a>
             </div>
           </div>
@@ -67,11 +65,14 @@ const ContactFormDialog = ({ setStatus }) => {
               href={`emailto: ${email.address}`}
               className='d-flex align-center'
             >
-              <AiOutlineMail size={20} className={`${styles.icon}`} />
+              <Email className={`${styles.icon}`} />
               &nbsp; {email.address}
             </a>
-            <a href={`tel:${phone.number} `} className='d-flex align-center'>
-              <BsTelephone size={20} className={`${styles.icon}`} />
+            <a
+              href={`tel:${phone.number} `}
+              className='d-flex align-center'
+            >
+              <Call className={`${styles.icon}`} />
               &nbsp; {phone.number}
             </a>
           </div>

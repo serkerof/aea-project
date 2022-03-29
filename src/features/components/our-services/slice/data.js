@@ -20,7 +20,7 @@ export const servicesData = {
       title: "Haushaltsauflösung",
       description: "wir bieten Ihnen best möglichem service!",
       icon: houseClearanceSvg,
-      imageAlt: "Haushaltsauflösung AEA Dienste Bielefeld",
+      imageAlt: "Haushaltsauflösung AEA Dienste Paderborn",
       link: "/haushaltsaufloesung",
     },
     clearingOut: {
@@ -28,7 +28,7 @@ export const servicesData = {
       title: "Entrümpelung",
       description: "wir bieten Ihnen best möglichem service!",
       icon: clearingOutSvg,
-      imageAlt: "Entrümpelung AEA Dienste Bielefeld",
+      imageAlt: "Entrümpelung AEA Dienste Paderborn",
       link: "/entruempelung",
     },
     smallMoves: {
@@ -36,7 +36,7 @@ export const servicesData = {
       title: "Kleine Umzüge",
       description: "wir bieten Ihnen best möglichem service!",
       icon: smallMovesSvg,
-      imageAlt: "Kleine Umzüge AEA Dienste Bielefeld",
+      imageAlt: "Kleine Umzüge AEA Dienste Paderborn",
       link: "/kleine-umzuege",
     },
     gardenMaintenance: {
@@ -44,7 +44,7 @@ export const servicesData = {
       title: "Gartenpflege",
       description: "wir bieten Ihnen best möglichem service!",
       icon: gardenMaintenanceSvg,
-      imageAlt: "Gartenpflege AEA Dienste Bielefeld",
+      imageAlt: "Gartenpflege AEA Dienste Paderborn",
       link: "/gartenpflege",
     },
     housecleaning: {
@@ -52,7 +52,7 @@ export const servicesData = {
       title: "Hausreinigung",
       description: "wir bieten Ihnen best möglichem service!",
       icon: housecleaningSvg,
-      imageAlt: "Hausreinigung AEA Dienste Bielefeld",
+      imageAlt: "Hausreinigung AEA Dienste Paderborn",
       link: "/hausreinigung",
     },
 
@@ -61,7 +61,7 @@ export const servicesData = {
       title: "Glasreinigung",
       description: "wir bieten Ihnen best möglichem service!",
       icon: glassCleaningSvg,
-      imageAlt: "Glasreinigung AEA Dienste Bielefeld",
+      imageAlt: "Glasreinigung AEA Dienste Paderborn",
       link: "/glasreinigung",
     },
   },

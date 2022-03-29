@@ -1,7 +1,6 @@
 import styles from "./header.module.css";
 import NavbarChooser from "../../components/navbar-chooser/NavbarChooser";
-import { BsInstagram } from "react-icons/bs";
-import { AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai";
+import { Instagram, Facebook, WhatsApp } from "@mui/icons-material";
 import { useSelector } from "react-redux";
 import { selectAllContactData } from "../../data/contactDataSlice";
 
@@ -24,18 +23,20 @@ const Header = ({ contactFormRef }) => {
         >
           <div className={`${styles.info_section}`}>
             <h5>Email</h5>
-            <a href={`mailto:${email.address}`}>{email.address}</a>
+            <a href={`mailto:${email.address}`} >
+              {email.address}
+            </a>
             <h5>Kontaktnummer</h5>
             <a href={`tel:${phone.number}`}>{phone.number}</a>
             <div className={`${styles.social_media} d-flex justify-around`}>
-              <a href={instagram.link}>
-                <BsInstagram className={`${styles.icon}`} size={25} />
+              <a href={instagram.link} >
+                <Instagram className={`${styles.icon}`} />
               </a>
-              <a href={facebook.link}>
-                <AiFillFacebook className={`${styles.icon}`} size={25} />
+              <a href={facebook.link} >
+                <Facebook className={`${styles.icon}`} />
               </a>
-              <a href={whatsapp.link}>
-                <AiOutlineWhatsApp className={`${styles.icon}`} size={25} />
+              <a href={whatsapp.link} >
+                <WhatsApp className={`${styles.icon}`} />
               </a>
             </div>
           </div>

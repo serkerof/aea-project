@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /haushaltsaufloesung 
+Disallow: /wohnungsaufloesung 
+Disallow: /firmenaufloesung 
+Disallow: /kelleraufloesung 
+Disallow: /entruempelung 
+Disallow: /hausreinigung 
+Disallow: /glasreinigung 
+Disallow: /kleine-umzuege
+Disallow: /abflussreinigung 

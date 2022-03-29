@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./offer.module.css";
-import { IoMdReturnLeft } from "react-icons/io";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 import Questions from "./questions/Questions";
 import ContactFormDialog from "../contact-form/ContactFormDialog";
 import Responsive from "../../responsive/Responsive";
@@ -25,7 +25,7 @@ const OfferDialog = ({ setStatus }) => {
       className={`${styles.return_btn} d-flex align-center `}
       onClick={() => setSelectedComponent(null)}
     >
-      <IoMdReturnLeft size={25} />
+      <KeyboardReturnIcon />
     </button>
   );
 

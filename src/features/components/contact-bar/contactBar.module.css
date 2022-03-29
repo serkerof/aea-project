@@ -8,7 +8,7 @@
 }
 
 .icon {
-    fill: var(--main-color);
+    color: white;
 }
 
 .sub_title {
@@ -26,6 +26,6 @@
     padding: 10px;
 }
 
-.icon_container:first-child{
+.icon_container:first-child {
     border-right: 2px solid var(--third-color);
 }
