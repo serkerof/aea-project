@@ -12,9 +12,9 @@ const OurServices = ({ setDialogStatus }) => {
     <div
       className={`${styles.item_box} d-flex direction-column justify-center align-center `}
       key={service.id}
-      onClick={() => {
-        navigate(service.link);
-      }}
+      // onClick={() => {
+      //   navigate(service.link);
+      // }}
     >
       <img
         className={`${styles.icon}`}

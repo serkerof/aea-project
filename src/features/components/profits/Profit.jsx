@@ -24,17 +24,17 @@ const Profit = () => {
             alt='Wir bieten bestmöglichem Service und Sie profitieren bei unsere Dienstleistungen'
           />
           <div
-            className={`${styles.item} ${styles.bg_green} d-flex align-center justify-center`}
+            className={`${styles.item}   ${styles.bg_yellow} d-flex align-center justify-center`}
           >
             <span className={`${styles.number}`}> 3</span>
           </div>
           <div
-            className={`${styles.item} ${styles.bg_aqua} d-flex align-center justify-center`}
+            className={`${styles.item} ${styles.bg_green}  d-flex align-center justify-center`}
           >
             <span className={`${styles.number}`}> 1</span>
           </div>
           <div
-            className={`${styles.item} ${styles.bg_yellow} d-flex align-center justify-center`}
+            className={`${styles.item} ${styles.bg_aqua} d-flex align-center justify-center`}
           >
             <span className={`${styles.number}`}> 2</span>
           </div>
@@ -48,7 +48,7 @@ const Profit = () => {
           <section
             className={`${styles.paragraph_section} ${styles.txt_green}`}
           >
-            <h4 className={`${styles.topic_title}`}>Kostenlose Termin</h4>
+            <h4 className={`${styles.topic_title}`}>1. Kostenlose Termin</h4>
             <p className={`${styles.topic_desc}`}>
               Sie werden vor Ort kostenlos besucht und ein Angebot bekommen.
             </p>
@@ -56,7 +56,7 @@ const Profit = () => {
           <section
             className={`${styles.paragraph_section}  ${styles.txt_aqua}`}
           >
-            <h4 className={`${styles.topic_title}`}>Wertvolle Dienst </h4>
+            <h4 className={`${styles.topic_title}`}>2. Wertvolle Dienst </h4>
             <p className={`${styles.topic_desc}`}>
               Mit hohem verantwortungsvoll werden wir uns um von Ihnen
               beauftragte Dienstleistung kümmern.
@@ -65,7 +65,7 @@ const Profit = () => {
           <section
             className={`${styles.paragraph_section} ${styles.txt_yellow}`}
           >
-            <h4 className={`${styles.topic_title}`}>Schnell</h4>
+            <h4 className={`${styles.topic_title}`}>3. Schnell</h4>
             <p className={`${styles.topic_desc}`}>
               Sie werden sehr schnell behandelt und ein Besuchtermin kriegen.
             </p>
@@ -73,7 +73,7 @@ const Profit = () => {
           <section
             className={`${styles.paragraph_section}  ${styles.txt_purple}`}
           >
-            <h4 className={`${styles.topic_title}`}>Schlüssel fertig</h4>
+            <h4 className={`${styles.topic_title}`}>4.Schlüssel fertig</h4>
             <p className={`${styles.topic_desc}`}>
               Alle gewünschte und vereinbarte Aufgaben werden erledigt und
               Schlüssel fertig abgegeben.
