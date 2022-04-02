@@ -18,19 +18,17 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
 
   const handleNavigate = (path) => {
     navigate(path);
-    setDisplayHamburgerMenu(false);
+    setDisplayHamburgerMenu("animate__animated animate__backOutRight");
   };
 
   return (
     <div
-      className={`${styles.hamburger_menu} ${
-        !displayHamburgerMenu ? styles.hidden : ""
-      } d-flex align-center`}
+      className={`${styles.hamburger_menu} ${displayHamburgerMenu} d-flex align-center`}
     >
       <div
         className={`${styles.close_btn}`}
         onClick={() => {
-          setDisplayHamburgerMenu(false);
+          setDisplayHamburgerMenu("animate__animated animate__backOutRight");
         }}
       >
         X

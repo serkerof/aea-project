@@ -94,7 +94,7 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       />
       <span
         className={`${styles.hamburger_icon_container} desktop-none`}
-        onClick={() => setDisplayHamburgerMenu(true)}
+        onClick={() => setDisplayHamburgerMenu("animate__animated animate__backInDown")}
       >
         <MenuIcon fontSize="large" className={`${styles.hamburger_icon}`} />
       </span>
