@@ -12,13 +12,22 @@ import { selectAllContactData } from "../../data/contactDataSlice";
 
 const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
   const navigate = useNavigate();
-  const [dropDownMenu, setDropDownMenu] = useState(false);
+  const [dropDownMenu, setDropDownMenu] = useState("display-none");
   const [, phone, instagram, facebook, whatsapp] =
     useSelector(selectAllContactData);
 
   const handleNavigate = (path) => {
     navigate(path);
     setDisplayHamburgerMenu("animate__animated animate__backOutRight");
+  };
+
+  const handleDropdownMenu = () => {
+    if (dropDownMenu === "display-none") {
+      setDropDownMenu("sub-menu-opening-animation");
+    } else {
+      setDropDownMenu("sub-menu-closing-animation");
+      setTimeout(() => setDropDownMenu("display-none"), 600);
+    }
   };
 
   return (
@@ -43,16 +52,11 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
           Über uns
         </li>
         <li className={`${styles.link_with_submenu}`}>
-          <p
-            className={`${styles.link}`}
-            onClick={() => {
-              setDropDownMenu(!dropDownMenu);
-            }}
-          >
+          <p className={`${styles.link}`} onClick={() => handleDropdownMenu()}>
             Leistungen <ArrowDropDown className={`${styles.caret}`} />
           </p>
-          {dropDownMenu ? (
-            <ul className={`${styles.submenu}`}>
+          {dropDownMenu !== "display-none" ? (
+            <ul className={`${styles.submenu} ${dropDownMenu}`}>
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
