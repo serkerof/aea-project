@@ -47,7 +47,15 @@ const Datenschutz = () => {
           personenbezogene Daten auch auf alternativen Wegen, beispielsweise
           telefonisch, an uns zu übermitteln.
         </p>
-
+        <p>
+          Datenerfassung auf unserer Website Wer ist verantwortlich für die
+          Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser
+          Website erfolgt durch den Websitebetreiber. Um Kontaktieren zu können
+          Besuchen Sie die <a href='https://www.emailjs.com/contact-us/'>Website</a> Über die
+          Schnittstelle emailjs werden Kontaktanfragen übermittelt, wobei die
+          Kontaktdaten auf keinem Server gespeichert, sondern sofort
+          weitergeleitet werden.
+        </p>
         <h4>1. Begriffsbestimmungen</h4>
         <p>
           Die Datenschutzerklärung der AEA Dienstleistung beruht auf den
