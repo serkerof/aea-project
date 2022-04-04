@@ -1,4 +1,5 @@
 User-agent: *
+Sitemap: https://www.aea-dienste.de/sitemap.xml
 Disallow: /haushaltsaufloesung 
 Disallow: /wohnungsaufloesung 
 Disallow: /firmenaufloesung 
