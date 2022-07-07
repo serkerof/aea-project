@@ -11,6 +11,14 @@ const HomeClearence = () => {
   const closeDialog = () => {
     setOpenDialog(null);
   };
+
+  const tags = [
+    "Büroauflösung",
+    "Wohnungsauflösung",
+    "Haushaltsauflösung",
+    "Entrümpelung",
+  ];
+  
   return (
     <div className={`${styles.container} ${styles.home_clearence}`}>
       <ClearenceServicesLinks currentService='home' />
@@ -60,7 +68,7 @@ const HomeClearence = () => {
         <li>• Transport des Umzugsgutes an die Entladeadresse</li>
         <li>• Wir stellen Deine Gegenstände dorthin wo Du möchtest</li>
       </ul>
-      <Tag />
+      <Tag tags={tags} />
       <ServiceOffer
         openDialog={openDialog}
         setOpenDialog={setOpenDialog}
