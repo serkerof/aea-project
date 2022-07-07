@@ -24,7 +24,6 @@ const OurServiceChooser = () => {
         alt={service.imageAlt}
       />
       <h3 className={`${styles.service_title}`}>{service.title}</h3>
-      <h5 className={`${styles.service_desc}`}>{service.description}</h5>
     </div>
   ));
 

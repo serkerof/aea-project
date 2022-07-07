@@ -1,4 +1,7 @@
 
+.tag_container{
+    margin-top: 40px;
+}
 .tag {
     background-color: var(--second-color);
     color: white;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 import styles from "./navbar.module.css";
@@ -17,31 +17,23 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          // navigate("/haushaltsaufloesung");
+          navigate("/haushaltsaufloesung-und-entruempelung");
         }}
       >
-        Haushaltsauflösung
+        Haushaltsauflösung & Entrümpelung
       </li>
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          // navigate("/entruempelung");
+          navigate("/umzuege");
         }}
       >
-        Entrümpelung
+        Umzüge
       </li>
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          // navigate("/kleine-umzuege");
-        }}
-      >
-        Kleine Umzüge
-      </li>
-      <li
-        className={`${styles.sub_link}`}
-        onClick={() => {
-          // navigate("/gartenpflege");
+          navigate("/gartenpflege");
         }}
       >
         Gartenpflege
@@ -49,18 +41,10 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       <li
         className={`${styles.sub_link}`}
         onClick={() => {
-          // navigate("/hausreinigung");
+          navigate("/reinigung");
         }}
       >
-        Hausreinigung
-      </li>
-      <li
-        className={`${styles.sub_link}`}
-        onClick={() => {
-          // navigate("/glasreinigung");
-        }}
-      >
-        Glasreinigung
+        Reinigung
       </li>
     </ul>
   );
@@ -94,9 +78,11 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       />
       <span
         className={`${styles.hamburger_icon_container} desktop-none`}
-        onClick={() => setDisplayHamburgerMenu("animate__animated animate__backInDown")}
+        onClick={() =>
+          setDisplayHamburgerMenu("animate__animated animate__backInDown")
+        }
       >
-        <MenuIcon fontSize="large" className={`${styles.hamburger_icon}`} />
+        <MenuIcon fontSize='large' className={`${styles.hamburger_icon}`} />
       </span>
       {links}
     </div>

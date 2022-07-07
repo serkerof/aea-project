@@ -19,6 +19,17 @@
     margin-bottom: 20px;
 }
 
+.home_clearence, .house_cleaning li {
+    font-size: var(--text-size);
+    margin: 10px;
+}
+
+.home_clearence, .house_cleaning p {
+    margin-bottom: 50px;
+}
+
+
+
 section p {
     font-size: var(--text-size);
     line-height: var(--text-line-height-size);

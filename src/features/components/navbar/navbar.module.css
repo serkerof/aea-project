@@ -82,11 +82,12 @@
 
     .sub_link {
         margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 10px;
     }
 
-    .sub_link :hover {
+    .sub_link:hover {
         background-color: lightgray !important;
-        text-transform: uppercase;
     }
 
     @keyframes growDown {

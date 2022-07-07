@@ -6,3 +6,13 @@
     max-width: 1200px;
     height: 50vh;
 }
+
+.title {
+    text-align: center;
+    margin: 20px 0px 50px;
+}
+
+.container p {
+    font-size: var(--text-size);
+    margin-bottom: 20px;
+}

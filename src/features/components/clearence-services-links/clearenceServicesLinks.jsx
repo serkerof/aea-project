@@ -16,12 +16,7 @@ const ClearenceServicesLinks = ({ currentService }) => {
         {clearenceServices.map(
           (service) =>
             service.id !== currentService && (
-              <button
-                className={`${styles.item_box} d-flex align-center`}
-                onClick={() => {
-                  navigate(service.link);
-                }}
-              >
+              <button className={`${styles.item_box} d-flex align-center`}>
                 <img
                   className={`${styles.icon}`}
                   src={service.icon}

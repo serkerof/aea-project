@@ -78,64 +78,50 @@ const Footer = () => {
         <ul className={`${styles.services_list}`}>
           <li
             onClick={() => {
-              // navigate("/haushaltsaufloesung");
+              navigate("/haushaltsaufloesung-und-entruempelung");
             }}
           >
-            Haushaltsauflösung
+            Haushaltsauflösung & <br/> Entrümpelung
           </li>
           <li
             onClick={() => {
-              // navigate("/entruempelung");
+              navigate("/umzuege");
             }}
           >
-            Entrümpelung
+            Umzüge
           </li>
           <li
             onClick={() => {
-              // navigate("/kleine-umzuege");
+              navigate("/reinigung");
             }}
           >
-            Kleine Umzüge
+            Reinigung
           </li>
           <li
             onClick={() => {
-              // navigate("/hausreinigung");
-            }}
-          >
-            Hausreinigung
-          </li>
-          <li
-            onClick={() => {
-              // navigate("/glasreinigung");
-            }}
-          >
-            Glasreinigung
-          </li>
-          <li
-            onClick={() => {
-              // navigate("/gartenpflege");
+              navigate("/gartenpflege");
             }}
           >
             Gartenpflege
           </li>
-          <li
+          {/* <li
             onClick={() => {
               // navigate("/abflussreinigung");
             }}
           >
             Abflussreinigung
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>
         <h5>
-          Service Gebiet
+          Service Gebiete
           <div className={`${styles.divider}`}></div>
         </h5>
         <ul className={`${styles.region_list}`}>
           <li>Paderborn</li>
           <li>Bielefeld</li>
-          <li>Dormund</li>
+          <li>Dortmund</li>
           <li>Gütersohl</li>
           <li>Lippstadt</li>
           <li>Soest</li>

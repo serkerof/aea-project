@@ -1,6 +1,6 @@
 import styles from "./services.module.css";
 
-const SmallMove = () => {
+const MovingOut = () => {
   return <div className={`${styles.container}`}>     {/* <Helmet>
   <title>Kellerauflösung</title>
   <meta
@@ -10,4 +10,4 @@ const SmallMove = () => {
 </Helmet> */}SmallMove</div>;
 };
 
-export default SmallMove;
+export default MovingOut;

@@ -10,11 +10,11 @@ const OurServices = ({ setDialogStatus }) => {
 
   const allServices = allServicesData.map((service) => (
     <div
-      className={`${styles.item_box} d-flex direction-column justify-center align-center `}
+      className={`${styles.item_box} d-flex direction-column align-center `}
       key={service.id}
-      // onClick={() => {
-      //   navigate(service.link);
-      // }}
+      onClick={() => {
+        navigate(service.link);
+      }}
     >
       <img
         className={`${styles.icon}`}
@@ -22,7 +22,6 @@ const OurServices = ({ setDialogStatus }) => {
         alt={service.imageAlt}
       />
       <h3 className={`${styles.service_title}`}>{service.title}</h3>
-      <h5 className={`${styles.service_desc}`}>{service.description}</h5>
       <img
         src={forwardsSvg}
         className={`${styles.link_icon}`}

@@ -5,39 +5,29 @@ import gardenMaintenanceSvg from "./../assets/icon/gartenpflege.svg";
 import housecleaningSvg from "./../assets/icon/hausreinigung.svg";
 import glassCleaningSvg from "./../assets/icon/glasreinigung.svg";
 
-export const servicesData = {
+export const servicesData = { 
   ids: [
-    "houseClearance",
     "clearingOut",
-    "smallMoves",
+    "movingOut",
     "gardenMaintenance",
-    "housecleaning",
-    "glassCleaning",
+    "cleaning",
   ],
   entities: {
-    houseClearance: {
-      id: "houseClearance",
-      title: "Haushaltsauflösung",
-      description: "wir bieten Ihnen best möglichem service!",
-      icon: houseClearanceSvg,
-      imageAlt: "Haushaltsauflösung AEA Dienste Paderborn",
-      link: "/haushaltsaufloesung",
-    },
     clearingOut: {
       id: "clearingOut",
-      title: "Entrümpelung",
+      title: "Haushaltsauflösung & Entrümpelung",
       description: "wir bieten Ihnen best möglichem service!",
       icon: clearingOutSvg,
       imageAlt: "Entrümpelung AEA Dienste Paderborn",
-      link: "/entruempelung",
+      link: "/haushaltsaufloesung-und-entruempelung",
     },
-    smallMoves: {
-      id: "smallMoves",
-      title: "Kleine Umzüge",
+    movingOut: {
+      id: "movingOut",
+      title: "Umzüge",
       description: "wir bieten Ihnen best möglichem service!",
       icon: smallMovesSvg,
       imageAlt: "Kleine Umzüge AEA Dienste Paderborn",
-      link: "/kleine-umzuege",
+      link: "/umzuege",
     },
     gardenMaintenance: {
       id: "gardenMaintenance",
@@ -47,22 +37,14 @@ export const servicesData = {
       imageAlt: "Gartenpflege AEA Dienste Paderborn",
       link: "/gartenpflege",
     },
-    housecleaning: {
-      id: "housecleaning",
-      title: "Hausreinigung",
+    cleaning: {
+      id: "cleaning",
+      title: "Reinigung",
       description: "wir bieten Ihnen best möglichem service!",
       icon: housecleaningSvg,
-      imageAlt: "Hausreinigung AEA Dienste Paderborn",
-      link: "/hausreinigung",
+      imageAlt: "Reinigung AEA Dienste Paderborn",
+      link: "/reinigung",
     },
 
-    glassCleaning: {
-      id: "glassCleaning",
-      title: "Glasreinigung",
-      description: "wir bieten Ihnen best möglichem service!",
-      icon: glassCleaningSvg,
-      imageAlt: "Glasreinigung AEA Dienste Paderborn",
-      link: "/glasreinigung",
-    },
   },
 };

@@ -4,12 +4,10 @@ import ApartmentClearence from "./features/pages/services/clearence/ApartmentCle
 import GarageClearence from "./features/pages/services/clearence/GarageClearence";
 import HomeClearence from "./features/pages/services/clearence/HomeClearence";
 import OfficeClearence from "./features/pages/services/clearence/OfficeClearence";
-import ClearingOut from "./features/pages/services/ClearingOut";
 import ServicesDashboard from "./features/pages/services/ServicesDashboard";
 import GardenMaintenance from "./features/pages/services/GardenMaintenance";
-import HouseClearing from "./features/pages/services/HouseClearing";
-import GlassClearing from "./features/pages/services/GlassClearing";
-import SmallMove from "./features/pages/services/SmallMove";
+import Clearing from "./features/pages/services/HouseClearing";
+import MovingOut from "./features/pages/services/MovingOut";
 import About from "./features/pages/about/About";
 import Contact from "./features/pages/contact/Contact";
 import DrainCleaning from "./features/pages/services/DrainCleaning";
@@ -23,10 +21,10 @@ function App() {
       {/* ====== Services ====== */}
       {/* Clearence */}
       <Route
-        path='/haushaltsaufloesung'
+        path='/haushaltsaufloesung-und-entruempelung'
         element={<ServicesDashboard component={<HomeClearence />} />}
       />
-      <Route
+      {/* <Route
         path='/wohnungsaufloesung'
         element={<ServicesDashboard component={<ApartmentClearence />} />}
       />
@@ -37,27 +35,23 @@ function App() {
       <Route
         path='/kelleraufloesung'
         element={<ServicesDashboard component={<GarageClearence />} />}
-      />
+      /> */}
       {/* Rest */}
-      <Route
-        path='/entruempelung'
-        element={<ServicesDashboard component={<ClearingOut />} />}
-      />
       <Route
         path='/gartenpflege'
         element={<ServicesDashboard component={<GardenMaintenance />} />}
       />
       <Route
-        path='/hausreinigung'
-        element={<ServicesDashboard component={<HouseClearing />} />}
+        path='/reinigung'
+        element={<ServicesDashboard component={<Clearing />} />}
       />
-      <Route
+      {/* <Route
         path='/glasreinigung'
         element={<ServicesDashboard component={<GlassClearing />} />}
-      />
+      /> */}
       <Route
-        path='/kleine-umzuege'
-        element={<ServicesDashboard component={<SmallMove />} />}
+        path='/umzuege'
+        element={<ServicesDashboard component={<MovingOut />} />}
       />
       <Route
         path='/abflussreinigung'
