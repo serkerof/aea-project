@@ -96,8 +96,8 @@ const Liquidation = () => {
               Tätigkeitsbeschreibung und Rechnung
             </h5>
             <p className={`${styles.desc}`}>
-              Am ende bekommen Sie alle von uns geleistete Tätigkeiten sowie
-              Rechnung.
+              Selbstverständlich am Ende bekommen Sie von uns eine detaillierte
+              Beschreibung und eine Rechnung für die geleistete Tätigkeiten.
             </p>
           </div>
         </div>
