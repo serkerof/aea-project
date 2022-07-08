@@ -1,5 +1,6 @@
 import Tag from "../../components/tag/Tag";
 import styles from "./services.module.css";
+import sectionImg from "./assets/img/gartenpflege.jpg";
 
 const GardenMaintenance = () => {
   const tags = ["Gartenpflege"];
@@ -7,6 +8,11 @@ const GardenMaintenance = () => {
   return (
     <div className={`${styles.container}`}>
       <h1 className={`${styles.topic_title}`}>Gartenpflege</h1>
+      <img
+        src={sectionImg}
+        alt='gartenpflege'
+        className={`${styles.topic_image}`}
+      />
       <p>
         Eine gepflegte Grünfläche trägt viel zum äußeren Erscheinungsbild bei.
         Damit der Garten nach der Fertigstellung in allen Farben erblühen kann,

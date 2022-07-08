@@ -28,7 +28,9 @@
     margin-bottom: 50px;
 }
 
-
+.alt_services li{
+    margin: 10px;
+}
 
 section p {
     font-size: var(--text-size);

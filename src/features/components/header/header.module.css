@@ -16,10 +16,14 @@
 .paragraph h1 {
     font-size: var(--title-size);
     margin-bottom: 20px;
+    text-shadow: 1px 1px #323232;
+
 }
 
 .paragraph h3 {
     font-size: calc(var(--title-size) - 5px);
+    text-shadow: 1px 1px #323232;
+
 }
 
 .context_container {
@@ -34,10 +38,12 @@
     min-width: 314px;
     margin-bottom: 20px;
 }
-.cities li{
+
+.cities li {
     color: white;
     font-size: 20px;
     padding: 5px;
+    text-shadow: 2px 2px #323232;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 

@@ -1,6 +1,6 @@
 import Tag from "../../components/tag/Tag";
 import styles from "./services.module.css";
-
+import sectionImg from "./assets/img/reinigung.jpg";
 const Clearing = () => {
   const tags = [
     "Hausreinigung",
@@ -12,6 +12,11 @@ const Clearing = () => {
   return (
     <div className={`${styles.container} ${styles.house_cleaning}`}>
       <h1 className={`${styles.topic_title}`}>Reinigung</h1>
+      <img
+        src={sectionImg}
+        alt='Reinigung'
+        className={`${styles.topic_image}`}
+      />
       <p>
         Egal, ob Privathaushalte, gewerbliche Objekte, Gastronomiebetriebe oder
         Büro- und Praxisräume, wir bieten unsere Leistungen in den genannten

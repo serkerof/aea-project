@@ -47,17 +47,15 @@ const OfferDialog = ({ setStatus }) => {
           className={`${styles.offering_button_group} "d-flex direction-column justify-center"
           `}
         >
-          <h2 className={`${styles.title}`}>Kontaktiere Uns</h2>
+          <h2 className={`${styles.title}`}>Kontaktieren Sie Uns</h2>
           <div className={styles.divider}></div>
-          <h3 className={`${styles.sub_title}`}>
-            Um schnelle Erledigung Ihre wünsche kontaktieren Sie bitte uns!
-          </h3>
+  
           <div className={`${isDesktop && "d-grid two-column"}`}>
             <div className={`${styles.item_box} ${styles.offering}`}>
-              <h4 className={`${styles.topic_title}`}>Befragung</h4>
+              <h4 className={`${styles.topic_title}`}>Kostenloses Angebot</h4>
               <p className={`${styles.desc}`}>
-                Tragen Sie gefragte fragen damit wir uns schnell um Ihre
-                Anliegen kümmern können!
+                Füllen Sie bitte das Formular um ein schnelles Angebot zu
+                erhalten.
               </p>
               <button
                 className={`${styles.get_offer_btn}`}
@@ -74,10 +72,10 @@ const OfferDialog = ({ setStatus }) => {
               </p>
             </div>
             <div className={`${styles.item_box} ${styles.contact_form}`}>
-              <h4 className={`${styles.topic_title}`}>Kontakt Form</h4>
+              <h4 className={`${styles.topic_title}`}>Kontaktformular</h4>
               <p className={`${styles.desc}`}>
-                Wenn Sie Fragen haben können Sie sehr schnell über unsere
-                Kontakt Form uns einreichen!
+                Haben Sie andere Fragen? Dann kontaktieren Sie uns um eine
+                schnelle Rückmeldung zu bekommen. Wir helfen Ihnen gerne weiter!
               </p>
               <button
                 className={`${styles.contact_btn}`}

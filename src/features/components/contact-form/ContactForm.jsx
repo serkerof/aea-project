@@ -49,8 +49,8 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           <div>
             <h3 className={`${styles.title}`}>Kontaktieren Sie uns!</h3>
             <p className={`${styles.desc}`}>
-              Wir sind rund um die Uhr für Sie Da! <br /> Um Ihrer Anfragen
-              Schnellstmöglich beantworten zu können. Kontaktieren Sie uns!
+              Wir sind rund um die Uhr für Sie da! <br /> Um Ihre Anfragen
+              schnellstmöglich beantworten zu können, kontaktieren Sie uns!
             </p>
           </div>
           <div className={`${styles.data}`}>
@@ -85,7 +85,7 @@ const ContactForm = ({ contactFormRef, visibilityClass }) => {
           className={`${styles.contact_form}`}
           ref={(ref) => (formRef = ref)}
         >
-          <h3 className={`${styles.title}`}>Sende uns eine Nachrict!</h3>
+          <h3 className={`${styles.title}`}>Sende uns eine Nachricht!</h3>
           <div className={`${styles.name_input} d-flex`}>
             <input type='text' name='forename' placeholder='Vorname' />
             <input type='text' name='surname' placeholder='Nachname' />

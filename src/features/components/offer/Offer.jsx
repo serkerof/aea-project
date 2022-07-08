@@ -1,5 +1,5 @@
 import styles from "./offer.module.css";
-import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from "@mui/icons-material/Person";
 import { useState } from "react";
 const Offer = ({ setStatus }) => {
   const [showMessage, setShowMessage] = useState(true);
@@ -14,11 +14,11 @@ const Offer = ({ setStatus }) => {
     >
       {showMessage && (
         <p className={`${styles.offer_message}`}>
-          Wollen Sie von uns ein angebot bekommen?
+          Erhalten Sie jetzt ein kostenloses Angebot! 
         </p>
       )}
       <button className={`${styles.button}`} onClick={() => setStatus(true)}>
-        <PersonIcon fontSize="large" />
+        <PersonIcon fontSize='large' />
       </button>
     </div>
   );

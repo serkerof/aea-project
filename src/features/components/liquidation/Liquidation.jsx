@@ -14,13 +14,17 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={visitImg} alt='Kostenlose Besuch' className={`${styles.icon}`} />
+            <img
+              src={visitImg}
+              alt='Kostenlose Besuch'
+              className={`${styles.icon}`}
+            />
           </div>
           <div className={`${styles.paragraph}`}>
-            <h5 className={`${styles.step_title}`}>Kostenlose Besuch</h5>
+            <h5 className={`${styles.step_title}`}>Kostenloser Besichtigung</h5>
             <p className={`${styles.desc}`}>
-              Wir werden an einem vereinbartem Ort ohne zusätzlichem kosten
-              treffen.
+              Wir werden an einem vereinbarten Ort treffen und ein kostenloses
+              Angebot machen.
             </p>
           </div>
         </div>
@@ -28,12 +32,16 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={reliablityImg} alt='Feste Preis' className={`${styles.icon}`} />
+            <img
+              src={reliablityImg}
+              alt='Feste Preis'
+              className={`${styles.icon}`}
+            />
           </div>
           <div className={`${styles.paragraph}`}>
-            <h5 className={`${styles.step_title}`}>Feste Preis</h5>
+            <h5 className={`${styles.step_title}`}>Transparente Preise</h5>
             <p className={`${styles.desc}`}>
-              Sie werden keine versteckte kosten erhalten.
+              Sie werden keine versteckte Kosten erhalten.
             </p>
           </div>
         </div>
@@ -41,13 +49,17 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={serviceImg} alt='Unsere Tätigkeiten leisten' className={`${styles.icon}`} />
+            <img
+              src={serviceImg}
+              alt='Unsere Tätigkeiten leisten'
+              className={`${styles.icon}`}
+            />
           </div>
           <div className={`${styles.paragraph}`}>
             <h5 className={`${styles.step_title}`}>Unsere Dienst</h5>
             <p className={`${styles.desc}`}>
-              Wir werden uns mit zuverlässigkeit um Ihrer gewünschte Dienst
-              kümmern.
+              Das freundliche Team unserer arbeitet nach den höchsten
+              Qualitätsstandards.
             </p>
           </div>
         </div>
@@ -55,13 +67,17 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={keyReadyImg} alt='Schlüssel fertig Abgabe' className={`${styles.icon}`} />
+            <img
+              src={keyReadyImg}
+              alt='Schlüssel fertig Abgabe'
+              className={`${styles.icon}`}
+            />
           </div>
           <div className={`${styles.paragraph}`}>
-            <h5 className={`${styles.step_title}`}>Schlüssel Fertig</h5>
+            <h5 className={`${styles.step_title}`}>Schlüsselfertige Arbeit</h5>
             <p className={`${styles.desc}`}>
-              Sie werden alle beaauftragte Artbeits erlefigt die Schlüssel
-              bekommen.
+              Wir planen und realisieren für Sie! Unsere Schlüsselfertige Arbeit
+              wird Sie begeistern.
             </p>
           </div>
         </div>
@@ -69,10 +85,16 @@ const Liquidation = () => {
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
-            <img src={priceImg} alt='Tätigkeiten und Rechnung' className={`${styles.icon}`} />
+            <img
+              src={priceImg}
+              alt='Tätigkeiten und Rechnung'
+              className={`${styles.icon}`}
+            />
           </div>
           <div className={`${styles.paragraph}`}>
-            <h5 className={`${styles.step_title}`}>Tätigkeiten und Rechnung</h5>
+            <h5 className={`${styles.step_title}`}>
+              Tätigkeitsbeschreibung und Rechnung
+            </h5>
             <p className={`${styles.desc}`}>
               Am ende bekommen Sie alle von uns geleistete Tätigkeiten sowie
               Rechnung.

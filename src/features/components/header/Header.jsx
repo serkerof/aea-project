@@ -2,7 +2,6 @@ import styles from "./header.module.css";
 import NavbarChooser from "../../components/navbar-chooser/NavbarChooser";
 
 const Header = ({ contactFormRef }) => {
-
   return (
     <div className={`${styles.header_container} d-flex align-center`}>
       <NavbarChooser />
@@ -11,7 +10,10 @@ const Header = ({ contactFormRef }) => {
       >
         <div className={`${styles.paragraph} d-flex direction-column `}>
           <h1>A. E. A. Dienstleistungen</h1>
-          <h3>Versuch ist Gold Wert.</h3>
+          <h3>
+            Ihr zuverlässiger Partner für Umzüge, Reinigungsarbeiten,
+            Haushaltsauflösungen und Gartenpflege.
+          </h3>
         </div>
         <div
           className={`${styles.cities} d-flex direction-column align-center justify-center`}

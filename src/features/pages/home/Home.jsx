@@ -12,6 +12,11 @@ const Home = ({ contactFormRef }) => {
   return (
     <div className={`${styles.container}`}>
       <OurServiceChooser />
+      <img
+        src={nightServiceImg}
+        alt='24 Stunden für Sie da'
+        className={`${styles.logo_24}`}
+      />
 
       <div
         className={`${styles.about_company} d-flex align-center justify-center flex-wrap`}
@@ -19,10 +24,10 @@ const Home = ({ contactFormRef }) => {
         <div className={`${styles.info_section}`}>
           <h2 className={`${styles.title}`}>AEA Dienstleistungen</h2>
           <p className={`${styles.service_desc}`}>
-            Wenn es um vertrauen oder zuverläsigem Arbeit geht, wir sind da
-            bereit. Unsere Ziel ist Ihre wünsche schnell und im bestem Zustand
-            erledigen. Bei uns sind Sie auch garantiert. Wir freuen uns auf
-            Zusammenarbeit!
+            Egal ob Sie innerhalb Paderborn, Paderborn, Dortmund, Gütersohl,
+            Lippstadt, Soest umziehen oder in ein anderes Land übersiedeln – wir
+            sind Ihr zuverlässiger Partner für jeden Umzug und dazu noch
+            schnell!
             <br />
             <strong className={`${styles.service_subtitle}`}>
               Ihre AEA Team
@@ -48,7 +53,7 @@ const Home = ({ contactFormRef }) => {
         </div>
       </div>
       <Liquidation />
-      <div
+      {/* <div
         className={`${styles.night_service}  d-flex align-center justify-center flex-wrap`}
       >
         <div
@@ -86,13 +91,13 @@ const Home = ({ contactFormRef }) => {
           </button>
         </div>
       </div>
-      <Profit />
+      <Profit /> */}
       {/* <SliderService /> */}
 
-      <div className={`${styles.hint}`}>
+      {/* <div className={`${styles.hint}`}>
         Damit wir Ihnen Schnellstmöglich helfen können bitte füllen Sie unsere
         Befragung!
-      </div>
+      </div> */}
 
       <ContactForm contactFormRef={contactFormRef} />
     </div>

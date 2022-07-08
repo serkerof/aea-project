@@ -20,8 +20,7 @@ const HomeClearence = () => {
   ];
   
   return (
-    <div className={`${styles.container} ${styles.home_clearence}`}>
-      <ClearenceServicesLinks currentService='home' />
+    <div className={`${styles.container} `}>
       <h1 className={`${styles.topic_title}`}>
         Haushaltsauflösung und Entrümpelung
       </h1>
@@ -45,7 +44,7 @@ const HomeClearence = () => {
         der Aufwand sein wird. Auch die Besichtigung führen wir natürlich
         kostenlos durch.
       </p>
-      <ul>
+      <ul className={`${styles.alt_services}`}>
         <h3>Ein Teil unserer Leistungen sind:</h3>
         <li>
           • Kostenloses Angebot anhand Ihre Informationen (telefonisch sowie
