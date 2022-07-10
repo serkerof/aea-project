@@ -30,14 +30,14 @@ const Navbar = ({ setDisplayHamburgerMenu }) => {
       >
         Umzüge
       </li>
-      <li
+      {/* <li
         className={`${styles.sub_link}`}
         onClick={() => {
           navigate("/gartenpflege");
         }}
       >
         Gartenpflege
-      </li>
+      </li> */}
       <li
         className={`${styles.sub_link}`}
         onClick={() => {

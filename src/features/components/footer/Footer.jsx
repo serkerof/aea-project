@@ -97,13 +97,13 @@ const Footer = () => {
           >
             Reinigung
           </li>
-          <li
+          {/* <li
             onClick={() => {
               navigate("/gartenpflege");
             }}
           >
             Gartenpflege
-          </li>
+          </li> */}
           {/* <li
             onClick={() => {
               // navigate("/abflussreinigung");

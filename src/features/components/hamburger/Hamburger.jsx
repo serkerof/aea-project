@@ -81,14 +81,14 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               >
                 Kleine Umzüge
               </li>
-              <li
+              {/* <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
                   handleNavigate("/gartenpflege");
                 }}
               >
                 Gartenpflege
-              </li>
+              </li> */}
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {

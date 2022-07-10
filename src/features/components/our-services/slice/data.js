@@ -5,11 +5,11 @@ import gardenMaintenanceSvg from "./../assets/icon/gartenpflege.svg";
 import housecleaningSvg from "./../assets/icon/hausreinigung.svg";
 import glassCleaningSvg from "./../assets/icon/glasreinigung.svg";
 
-export const servicesData = { 
+export const servicesData = {
   ids: [
     "clearingOut",
     "movingOut",
-    "gardenMaintenance",
+    // "gardenMaintenance",
     "cleaning",
   ],
   entities: {
@@ -29,14 +29,14 @@ export const servicesData = {
       imageAlt: "Kleine Umzüge AEA Dienste Paderborn",
       link: "/umzuege",
     },
-    gardenMaintenance: {
-      id: "gardenMaintenance",
-      title: "Gartenpflege",
-      description: "wir bieten Ihnen best möglichem service!",
-      icon: gardenMaintenanceSvg,
-      imageAlt: "Gartenpflege AEA Dienste Paderborn",
-      link: "/gartenpflege",
-    },
+    // gardenMaintenance: {
+    //   id: "gardenMaintenance",
+    //   title: "Gartenpflege",
+    //   description: "wir bieten Ihnen best möglichem service!",
+    //   icon: gardenMaintenanceSvg,
+    //   imageAlt: "Gartenpflege AEA Dienste Paderborn",
+    //   link: "/gartenpflege",
+    // },
     cleaning: {
       id: "cleaning",
       title: "Reinigung",
@@ -45,6 +45,5 @@ export const servicesData = {
       imageAlt: "Reinigung AEA Dienste Paderborn",
       link: "/reinigung",
     },
-
   },
 };
