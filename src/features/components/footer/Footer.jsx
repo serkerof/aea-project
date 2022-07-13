@@ -121,8 +121,7 @@ const Footer = () => {
         <ul className={`${styles.region_list}`}>
           <li>Paderborn</li>
           <li>Bielefeld</li>
-          <li>Dortmund</li>
-          <li>Gütersohl</li>
+          <li>Gütersloh</li>
           <li>Lippstadt</li>
           <li>Soest</li>
         </ul>

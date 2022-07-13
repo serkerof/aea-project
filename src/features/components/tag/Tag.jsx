@@ -5,8 +5,9 @@ const Tag = ({ tags }) => {
       Tags:
       <h5 className={`${styles.tag}`}>Paderborn</h5>
       <h5 className={`${styles.tag}`}>Bielefeld</h5>
-      <h5 className={`${styles.tag}`}>Dortmund</h5>
       <h5 className={`${styles.tag}`}>Paderborn</h5>
+      <h5 className={`${styles.tag}`}>Soest</h5>
+      <h5 className={`${styles.tag}`}>Gütersloh</h5>
       {tags.map((tag) => (
         <h5 className={`${styles.tag}`}>{tag}</h5>
       ))}

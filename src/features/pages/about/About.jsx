@@ -10,7 +10,7 @@ const About = () => {
         <h1 className={`${styles.title}`}>Über uns</h1>
         <p>
           Wir bieten wir unsere Dienstleistungen in den Städten Paderborn,
-          Bielefeld, Dortmund, Gütersohl, Lippstadt, Soest unseren Kunden an.
+          Bielefeld, Gütersloh, Lippstadt, Soest unseren Kunden an.
         </p>
         <p>
           Wir garantieren unseren Kunden beste Qualität zu fairen Preisen, ob

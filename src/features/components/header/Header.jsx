@@ -20,8 +20,7 @@ const Header = ({ contactFormRef }) => {
         >
           <li>Paderborn</li>
           <li>Bielefeld</li>
-          <li>Dortmund</li>
-          <li>Gütersohl</li>
+          <li>Gütersloh</li>
           <li>Lippstadt</li>
           <li>Soest</li>
         </div>

@@ -60,26 +60,26 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  handleNavigate("/haushaltsaufloesung");
+                  handleNavigate("/haushaltsaufloesung-und-entruempelung");
                 }}
               >
-                Haushaltsauflösung
+                Haushaltsauflösung & Entrümpelung
               </li>
-              <li
+              {/* <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
                   handleNavigate("/entruempelung");
                 }}
               >
                 Entrümpelung
-              </li>
+              </li> */}
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  handleNavigate("/kleine-umzuege");
+                  handleNavigate("/umzuege");
                 }}
               >
-                Kleine Umzüge
+                Umzüge
               </li>
               {/* <li
                 className={`${styles.sub_link}`}
@@ -92,18 +92,10 @@ const Hamburger = ({ displayHamburgerMenu, setDisplayHamburgerMenu }) => {
               <li
                 className={`${styles.sub_link}`}
                 onClick={() => {
-                  handleNavigate("/hausreinigung");
+                  handleNavigate("/reinigung");
                 }}
               >
-                Hausreinigung
-              </li>
-              <li
-                className={`${styles.sub_link}`}
-                onClick={() => {
-                  handleNavigate("/glasreinigung");
-                }}
-              >
-                Glasreinigung
+                reinigung
               </li>
             </ul>
           ) : (
