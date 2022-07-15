@@ -12,7 +12,7 @@ const Header = ({ contactFormRef }) => {
           <h1>A. E. A. Dienstleistungen</h1>
           <h3>
             Ihr zuverlässiger Partner für Umzüge, Reinigungsarbeiten,
-            Haushaltsauflösungen und Gartenpflege.
+            Haushaltsauflösungen.
           </h3>
         </div>
         <div

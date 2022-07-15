@@ -74,9 +74,9 @@
     padding: 10px;
 }
 
-.option_box:hover {
+/* .option_box:hover {
     background-color: var(--light-gray-color);
-}
+} */
 
 .selected {
     pointer-events: none;

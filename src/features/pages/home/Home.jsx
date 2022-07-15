@@ -24,10 +24,9 @@ const Home = ({ contactFormRef }) => {
         <div className={`${styles.info_section}`}>
           <h2 className={`${styles.title}`}>AEA Dienstleistungen</h2>
           <p className={`${styles.service_desc}`}>
-            Egal ob Sie innerhalb Paderborn, Bielefeld, Dortmund, Gütersohl,
-            Lippstadt, Soest umziehen oder in ein anderes Land übersiedeln – wir
-            sind Ihr zuverlässiger Partner für jeden Umzug und dazu noch
-            schnell!
+            Egal ob Sie innerhalb Paderborn, Bielefeld, Gütersloh, Lippstadt,
+            Soest umziehen oder in ein anderes Land übersiedeln – wir sind Ihr
+            zuverlässiger Partner für jeden Umzug und dazu noch schnell!
             <br />
             <strong className={`${styles.service_subtitle}`}>
               Ihre AEA Team
