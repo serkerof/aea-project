@@ -1,6 +1,7 @@
 import Tag from "../../components/tag/Tag";
 import styles from "./services.module.css";
 import sectionImg from "./assets/img/gartenpflege.jpg";
+import { Helmet } from "react-helmet";
 
 const GardenMaintenance = () => {
   const tags = ["Gartenpflege"];
