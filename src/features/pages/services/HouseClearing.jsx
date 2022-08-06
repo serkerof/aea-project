@@ -1,6 +1,7 @@
 import Tag from "../../components/tag/Tag";
 import styles from "./services.module.css";
 import sectionImg from "./assets/img/reinigung.jpg";
+import { Helmet } from "react-helmet";
 const Clearing = () => {
   const tags = [
     "Hausreinigung",
@@ -11,6 +12,9 @@ const Clearing = () => {
 
   return (
     <div className={`${styles.container} ${styles.house_cleaning}`}>
+      <Helmet>
+      <title>Reinigung</title>
+      </Helmet>
       <h1 className={`${styles.topic_title}`}>Reinigung</h1>
       <img
         src={sectionImg}

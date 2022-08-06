@@ -4,6 +4,7 @@ import ClearenceServicesLinks from "../../../components/clearence-services-links
 import sectionImg from "./assets/img/haushaltsaufloesung.jpg";
 import styles from "./../services.module.css";
 import ServiceOffer from "../../../components/offer/ServiceOffer";
+import { Helmet } from "react-helmet";
 
 const HomeClearence = () => {
   const [openDialog, setOpenDialog] = useState();
@@ -18,9 +19,12 @@ const HomeClearence = () => {
     "Haushaltsauflösung",
     "Entrümpelung",
   ];
-  
+
   return (
     <div className={`${styles.container} `}>
+      <Helmet>
+        <title> Haushaltsauflösung und Entrümpelung</title>
+      </Helmet>
       <h1 className={`${styles.topic_title}`}>
         Haushaltsauflösung und Entrümpelung
       </h1>

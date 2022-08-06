@@ -7,6 +7,9 @@ const GardenMaintenance = () => {
 
   return (
     <div className={`${styles.container}`}>
+      <Helmet>
+        <title>Gartenpflege</title>
+      </Helmet>
       <h1 className={`${styles.topic_title}`}>Gartenpflege</h1>
       <img
         src={sectionImg}
