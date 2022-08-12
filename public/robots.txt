@@ -1,11 +1,3 @@
 User-agent: *
 Sitemap: https://www.aea-dienste.de/sitemap.xml
-Disallow: /haushaltsaufloesung 
-Disallow: /wohnungsaufloesung 
-Disallow: /firmenaufloesung 
-Disallow: /kelleraufloesung 
-Disallow: /entruempelung 
-Disallow: /hausreinigung 
-Disallow: /glasreinigung 
-Disallow: /kleine-umzuege
-Disallow: /abflussreinigung 
+
