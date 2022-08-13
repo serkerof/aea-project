@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http:// sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.aea-dienste.de/</loc>
-    </url>
-    <!-- <url>
-        <loc>https://www.aea-dienste.de/haushaltsaufloesung</loc>
+        <loc>https://aea-dienste.de/</loc>
     </url>
     <url>
-        <loc>https://www.aea-dienste.de/wohnungsaufloesung</loc>
+        <loc>https://aea-dienste.de/haushaltsaufloesung-und-entruempelung</loc>
     </url>
     <url>
-        <loc>https://www.aea-dienste.de/firmenaufloesung</loc>
+        <loc>https://aea-dienste.de/reinigung</loc>
     </url>
     <url>
-        <loc>https://www.aea-dienste.de/kelleraufloesung</loc>
-    </url> -->
-    <url>
-        <loc>https://www.aea-dienste.de/haushaltsaufloesung-und-entruempelung</loc>
+        <loc>https://aea-dienste.de/umzuege</loc>
     </url>
-    <url>
-        <loc>https://www.aea-dienste.de/reinigung</loc>
-    </url>
-    <!-- <url>
-        <loc>https://www.aea-dienste.de/glasreinigung</loc>
-    </url> -->
-    <url>
-        <loc>https://www.aea-dienste.de/umzuege</loc>
-    </url>
-    <!-- <url>
-        <loc>https://www.aea-dienste.de/abflussreinigung</loc>
-    </url> -->
 </urlset>
