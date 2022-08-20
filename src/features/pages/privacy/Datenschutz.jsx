@@ -218,7 +218,7 @@ const Datenschutz = () => {
         <p>33129 Delbrück</p>
         <p>Deutschland</p>
         <p>Tel.: +4915174338815</p>
-        <p>E-Mail: a.e.a.dienstleistungen@gmail.com</p>
+        <p>E-Mail: kontakt@aea-dienste.de</p>
         <p>Website: aea-dienste.de</p>
 
         <h4>3. Erfassung von allgemeinen Daten und Informationen</h4>

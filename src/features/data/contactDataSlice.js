@@ -14,7 +14,7 @@ const initialState = {
     entities: {
       email: {
         id: "email",
-        address: "a.e.a.dienstleistungen@gmail.com",
+        address: "kontakt@aea-dienste.de",
       },
       phone: {
         id: "phone",
