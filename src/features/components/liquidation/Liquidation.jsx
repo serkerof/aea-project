@@ -81,7 +81,7 @@ const Liquidation = () => {
             </p>
           </div>
         </div>
-        <div className={`${styles.outer} ${styles.blue}`}>
+        {/* <div className={`${styles.outer} ${styles.blue}`}>
           <div
             className={`${styles.circle_outer} d-flex justify-center align-center`}
           >
@@ -100,7 +100,7 @@ const Liquidation = () => {
               Beschreibung und eine Rechnung für die geleistete Tätigkeiten.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
