@@ -12,11 +12,6 @@ const Home = ({ contactFormRef }) => {
   return (
     <div className={`${styles.container}`}>
       <OurServiceChooser />
-      <img
-        src={nightServiceImg}
-        alt='24 Stunden für Sie da'
-        className={`${styles.logo_24}`}
-      />
 
       <div
         className={`${styles.about_company} d-flex align-center justify-center flex-wrap`}
